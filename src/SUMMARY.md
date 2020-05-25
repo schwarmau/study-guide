@@ -11,8 +11,8 @@
         - [Composite Types](data_structures/data_types/composite_types.md)
         - [Abstract Data Types](data_structures/data_types/abstract_data_types.md)
     - [Linear Data Structures](data_structures/linear_data_structures.md)
-    - [Trees](data_structures/trees.md)
     - [Graphs](data_structures/graphs.md)
+    - [Trees](data_structures/trees.md)
     - [Cheat Sheet](data_structures/cheat_sheet.md)
 
 - [Algorithms](algorithms/algorithms.md)
