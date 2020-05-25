@@ -1,8 +1,10 @@
 [book]
 title = "Software Engineering Study Guide"
 description = "A study guide for software engineering interviews"
-authors = ["Austin Schwarm""]
+authors = ["Austin Schwarm"]
 language = "en"
+multilingual = false
+src = "src"
 
 [output.html]
 mathjax-support = true
