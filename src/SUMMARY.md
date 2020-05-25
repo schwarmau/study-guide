@@ -7,9 +7,9 @@
 
 - [Data Structures](data_structures/data_structures.md)
     - [Data Types](data_structures/data_types/data_types.md)
-        - [Primitive Types](data_strucutres/data_types/primitive_types.md)
-        - [Composite Types](data_strucutres/data_types/composite_types.md)
-        - [Abstract Data Types](data_strucutres/data_types/abstract_data_types.md)
+        - [Primitive Types](data_structures/data_types/primitive_types.md)
+        - [Composite Types](data_structures/data_types/composite_types.md)
+        - [Abstract Data Types](data_structures/data_types/abstract_data_types.md)
     - [Linear Data Structures](data_structures/linear_data_structures.md)
     - [Trees](data_structures/trees.md)
     - [Graphs](data_structures/graphs.md)
