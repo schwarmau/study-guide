@@ -1,3 +1,3 @@
 # Data Structures
 
-These are fundamental structures in computer science which enable complex operations.
+These are fundamental structures in computer science which enable complex operations. This chapter only covers data structures that are significant/well-known in computer science, or that are broadly applicable to most computer science fields. You will not find data structures in this chapter that have very specific, niche use cases, or are only applicable to specific fields of computer science.
