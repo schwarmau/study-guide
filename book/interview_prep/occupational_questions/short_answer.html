@@ -151,6 +151,75 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#short-answer" id="short-answer">Short Answer</a></h1>
+<p><strong>Q:</strong> What is \( 2^x \)? Note: \( x \) will rarely be more than 12.</p>
+<p><strong>A:</strong> 2, 4, 8, 16, 32, 64, etc.</p>
+<br>
+<p><strong>Q:</strong> What is the difference between a struct and a class, and what might you use a struct for? Note: This is somewhat language-dependent (not all languages even have both).</p>
+<p><strong>A:</strong> Structs usually give their properties and methods public modifiers by default, and in some modern languages they represent value types as opposed to reference types. Usually structs are used for simple objects or types, which don't need complex methods. In general, a struct might be appropriate when the data type is going to be small, and either it is expected to be short-lived or it is expected to be frequently embedded in other objects.</p>
+<br>
+<p><strong>Q:</strong> What is a static class/method/variable?</p>
+<p><strong>A:</strong></p>
+<ul>
+<li>Class: A static class is one which cannot be instantiated.</li>
+<li>Method: A static method is one which is not tied to an instance of an object.</li>
+<li>Variable: A static variable is one which is shared across instances of an object.</li>
+</ul>
+<br>
+<p><strong>Q:</strong> What do the 'public', 'protected', 'private', and 'internal' keywords denote?</p>
+<p><strong>A:</strong> These keywords refer to the accessibility of their subjects:</p>
+<ul>
+<li>Public: Anyone can access this from anywhere.</li>
+<li>Protected: When present in languages, it usually means only child classes can access this, and they can do so from anywhere.</li>
+<li>Private: Only this object can access this.</li>
+<li>Internal: When present in languages, it usually means anyone can access this, but only from within this package/library.</li>
+</ul>
+<br>
+<p><strong>Q:</strong> What does being immutable entail, and what keywords can modify mutability?</p>
+<p><strong>A:</strong> If something is immutable then it cannot be changed.</p>
+<ul>
+<li>The 'const' keyword can make its subject immutable at compile time (in addition to being static).</li>
+<li>The 'readonly', when present in a language, can make its subject immutable at run time. Its value can still only be set once, and usually only in the constructor of a class.</li>
+</ul>
+<br>
+<p><strong>Q:</strong> What does the 'final' keyword denote?</p>
+<p><strong>A:</strong> When present in a language, it prevents a class or method from being inherited or overriden, respectively.</p>
+<br>
+<p><strong>Q:</strong> What is idempotence?</p>
+<p><strong>A:</strong> A function is said to be idempotent if repeated function calls with the same input will only change the state of the state of the application once.</p>
+<ul>
+<li>For example: getting a value and setting a value are idempotent, the end result is always the same after the first call is made, regardless of repetition. However, adding to a list is not idempotent, because repeated calls to add will keep modifying the list further.</li>
+<li>In mathematical terms, a function \( f \) is idempotent if \( f o f = f \).</li>
+</ul>
+<br>
+<p><strong>Q:</strong> What is lazy bind/loading?</p>
+<p><strong>A:</strong> Waiting until a resource is needed before you bind/load it.</p>
+<br>
+<p><strong>Q:</strong> What is reflection?</p>
+<p><strong>A:</strong> Code's ability to inspect itself or other code in the same program.</p>
+<br>
+<p><strong>Q:</strong> What are the 4 pillars of object-oriented design?</p>
+<p><strong>A:</strong></p>
+<ul>
+<li>Abstraction: The process of showing only the necessary features of an object to other code.</li>
+<li>Inheritance: The ability to make a hierarchy of classes wherein child classes acquire certain properties and behaviors of parent classes.</li>
+<li>Polymorphism: The ability of a child class to both share and extend the properties and behavior of a parent class.</li>
+<li>Encapsulation: The process of wrapping properties and behavior in an object so that access to each property and function can be controlled, and so that properties and behavior can be related to each other.</li>
+</ul>
+<br>
+<p><strong>Q:</strong> What's the difference between inheriting and interfacing?</p>
+<p><strong>A:</strong> Inheritance defines what an object is, whereas interfacing defines what an object can do.</p>
+<br>
+<p><strong>Q:</strong> What is a pure function?</p>
+<p><strong>A:</strong> A function with no side-effects that always returns the same output for a given input.</p>
+<br>
+<p><strong>Q:</strong> What is NP-Completeness?</p>
+<p><strong>A:</strong> A problem is said to be NP if it has a non-deterministic polynomial-time solution, and a problem is said to be NP-Hard if every NP problem can be transformed into it in polynomial time. For a problem to be NP-Complete means that it is both NP and NP-Hard.</p>
+<br>
+<p><strong>Q:</strong> What is a lock/mutex?</p>
+<p><strong>A:</strong> A mechanism for controlling access to a resource. Unlike semaphores, only one task can gain access to a lock/mutex at a time in order to access the resource.</p>
+<br>
+<p><strong>Q:</strong> What is a semaphore?</p>
+<p><strong>A:</strong> A variable used to signal the availability of a resource. Unlike locks/mutexes, a semaphore can allow multiple tasks to access a resource; a semaphore value of 0 indicates that no other tasks are allowed access to the resource, and a value of more than 0 allows that many more tasks to access the resource. Consequently, a binary semaphore (a semaphore only allowed to be 0 or 1) can be used to implement a lock/mutex.</p>
 
                     </main>
 
