@@ -151,6 +151,69 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#general-knowledge" id="general-knowledge">General Knowledge</a></h1>
+<h3><a class="header" href="#bitwise-operations" id="bitwise-operations">Bitwise Operations</a></h3>
+<ul>
+<li>&amp; = AND</li>
+<li>| = OR</li>
+<li>~ = NOT</li>
+<li>^ = XOR</li>
+<li>&lt;&lt; = left shift (new bits are 0)</li>
+<li>&gt;&gt; = right shift (new bits are 0)</li>
+</ul>
+<h3><a class="header" href="#bit-manipulation-tricks" id="bit-manipulation-tricks">Bit Manipulation Tricks</a></h3>
+<ul>
+<li>Check if an integer is even</li>
+</ul>
+<pre><code>return x &amp; 1 == 0;
+</code></pre>
+<ul>
+<li>Check if an integer is a power of 2</li>
+</ul>
+<pre><code>return x &amp;&amp; !(x &amp; (x - 1));
+</code></pre>
+<ul>
+<li>Swap two numbers</li>
+</ul>
+<pre><code>a = 1; b = 2;
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+// a = 2, b = 1
+</code></pre>
+<ul>
+<li>Flip the bits of an integer (language-dependent)</li>
+</ul>
+<pre><code>int allOnes = ConvertToInt(&quot;111...&quot;); // use as many 1s as there are bits in x
+return allOnes - x;
+</code></pre>
+<h3><a class="header" href="#http-request-methods" id="http-request-methods">HTTP Request Methods</a></h3>
+<ul>
+<li>GET = Retrieve data.</li>
+<li>HEAD = GET, but without the response body (just the metadata and header).</li>
+<li>POST = Tell a URI to handle some data.</li>
+<li>PUT = Set the resource at the given URI.</li>
+<li>DELETE = Delete the specified resource.</li>
+</ul>
+<p>There are others, but these are the most commonly used.</p>
+<h3><a class="header" href="#git-commands" id="git-commands">Git Commands</a></h3>
+<ul>
+<li>init</li>
+<li>clone</li>
+<li>diff</li>
+<li>commit</li>
+<li>restore</li>
+<li>reset</li>
+<li>branch</li>
+<li>checkout</li>
+<li>merge / mergetool</li>
+<li>stash</li>
+<li>fetch</li>
+<li>pull</li>
+<li>push</li>
+<li>cherry-pick</li>
+<li>rebase</li>
+</ul>
+<p>There are others, but these are the most commonly used.</p>
 
                     </main>
 
