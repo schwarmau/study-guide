@@ -45,20 +45,17 @@ There are others, but these are the most commonly used.
 
 ### Git Commands
 
-- init
-- clone
-- diff
-- commit
-- restore
-- reset
-- branch
-- checkout
-- merge / mergetool
-- stash
-- fetch
-- pull
-- push
-- cherry-pick
-- rebase
+- init - creates a new local repository
+- clone - downloads an existing project/repo
+- diff - shows unstaged file differences
+- commit - records the current state of files to version history
+- reset - undoes all commits after the provided one
+- branch - creates a new branch
+- checkout - switches to a specified branch
+- merge / mergetool - combine target branches
+- stash - temporarily store current file changes
+- fetch - downloads repo history
+- pull - downloads branch history
+- push - uploads local branch commits
 
 There are others, but these are the most commonly used.

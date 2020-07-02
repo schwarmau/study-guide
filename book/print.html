@@ -200,24 +200,68 @@ return allOnes - x;
 <p>There are others, but these are the most commonly used.</p>
 <h3><a class="header" href="#git-commands" id="git-commands">Git Commands</a></h3>
 <ul>
-<li>init</li>
-<li>clone</li>
-<li>diff</li>
-<li>commit</li>
-<li>restore</li>
-<li>reset</li>
-<li>branch</li>
-<li>checkout</li>
-<li>merge / mergetool</li>
-<li>stash</li>
-<li>fetch</li>
-<li>pull</li>
-<li>push</li>
-<li>cherry-pick</li>
-<li>rebase</li>
+<li>init - creates a new local repository</li>
+<li>clone - downloads an existing project/repo</li>
+<li>diff - shows unstaged file differences</li>
+<li>commit - records the current state of files to version history</li>
+<li>reset - undoes all commits after the provided one</li>
+<li>branch - creates a new branch</li>
+<li>checkout - switches to a specified branch</li>
+<li>merge / mergetool - combine target branches</li>
+<li>stash - temporarily store current file changes</li>
+<li>fetch - downloads repo history</li>
+<li>pull - downloads branch history</li>
+<li>push - uploads local branch commits</li>
 </ul>
 <p>There are others, but these are the most commonly used.</p>
 <h1><a class="header" href="#asymptotic-analysis" id="asymptotic-analysis">Asymptotic Analysis</a></h1>
+<h2><a class="header" href="#big-o-notation" id="big-o-notation">Big-O Notation</a></h2>
+<p>Asymptotic analysis is usually expressed in Big-O notation. This notation is usually used to describe the upper bound on a growth rate.</p>
+<p>Formally, it is said that \( f(x) = O(g(x)) \) if there exists a positive real number \( m \) such that \( \left\lvert f(x) \right\rvert \leq m \cdot g(x) \) as \( x \to \infty \). Alternatively, \( f(x) = O(g(x)) \) if such an \( m \) exists that makes \( \lim_{x \to \infty} \frac{\left\lvert f(x) \right\rvert}{m \cdot g(x)} \lt \infty \) true.</p>
+<p>For example: \( x^2 \) is \( O\left(x^3\right) \) and \( 4x^2 + 3x + 2 \) is \( O\left(x^2\right) \).</p>
+<h2><a class="header" href="#other-notations" id="other-notations">Other Notations</a></h2>
+<p>Big-\( \Omega \) notation can be interpreted as the &quot;opposite&quot; of Big-O notation in computer science; \( f(x) = \Omega(g(x)) \) if and only if \( g(x) = O(f(x)) \). Alternatively, \( f(x) = \Omega(g(x)) \) if there exists a positive real number \( m \) such that \( \lim_{x \to \infty} \frac{f(x)}{m \cdot g(x)} \gt 0 \).</p>
+<p>For example: \( x^3 \) is \( \Omega\left(8x^2\right) \). It is also possible for the second example above to hold: \( 4x^2 + 3x + 2 \) is \( \Omega\left(x^2\right) \).</p>
+<p>Big-\( \Theta \) notation is defined simply as: \( f(x) = \Theta(g(x)) \) if and only if \( f(x) = O(g(x)) = \Omega(g(x)) \).</p>
+<p>Using the example above: \( 4x^2 + 3x + 2 \) is \( \Theta\left(x^2\right) \).</p>
+<h2><a class="header" href="#algorithm-analysis" id="algorithm-analysis">Algorithm Analysis</a></h2>
+<p>In computer science, Big-O notation is commonly used to describe the performance of algorithms, either in terms of run time or memory usage. Usually when run time or memory usage are analyzed, we want to know the worst-case, so we make the assumption that conditional statements always pass. Take the following function for example:</p>
+<pre><code>def myFunc(someArray)
+{
+    count = 0;
+
+    foreach (element in someArray)
+    {
+        if (element != null)
+            count = count + 1;
+    }
+}
+</code></pre>
+<p>Line-by-line:</p>
+<ul>
+<li><code>count = 0;</code> is an assignment operation, and has a constant run time, so this is an \( O(1) \) operation.</li>
+<li><code>foreach (element in someArray)</code> loops through each element of the array, so this tells us that whatever happens inside this loop will happen n times, where n is the length of the array.</li>
+<li><code>if (element != null)</code> is a conditional statement (constant time) using an equality comparer (also constant time), thus an \( O(1) \) operation.</li>
+<li><code>count = count + 1;</code> is an assignment and increment (both constant time). Since we're analyzing the worst case scenario, we assume this will always be hit, even though it's only conditionally hit in practice. Either way, it is an \( O(1) \) operation.</li>
+</ul>
+<p>In total, we have a run time of \( O(1) + (O(n) \cdot (O(1) + O(1))) \). This can be condensed to \( O(1 + (n \cdot (1 + 1))) = O(1 + n) = O(n) \).</p>
+<p>If we were to add another for loop inside the existing one then we would get a runtime of \( O\left(n^2\right) \), and so on.</p>
+<h3><a class="header" href="#amortized-analysis" id="amortized-analysis">Amortized Analysis</a></h3>
+<p>An alternative to worst-case performance analysis is amortized analysis, which is roughly &quot;average-case&quot; performance analysis. There are 3 primary methods to analyze an algorithm like this:</p>
+<ol>
+<li>Run the algorithm \( n \) times with different inputs, calculating their operational costs each time. Take the upper bound of the sum of all operational costs and divide by \( n \).</li>
+<li><a href="https://en.wikipedia.org/wiki/Accounting_method_(computer_science)">The accounting method</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Potential_method">The potential method</a></li>
+</ol>
+<p>Amortized analysis is usually how certain performance gains are found, especially when the possible input set of an algorithm is limited. For example, quick sort is the most commonly implemented sorting algorithm, but it's actually faster to sort a mostly sorted collection using insertion sort. Similarly, quick sort in and of itself has a worst-case of \( O(n) \), even though it's <em>usually</em> more performant than other sorting algorithms with better worst-case analyses.</p>
+<h3><a class="header" href="#the-master-theorem" id="the-master-theorem">The Master Theorem</a></h3>
+<p>Sometimes it is difficult to analyze algorithms, especially when they implement recursion, such as in Divide &amp; Conquer algorithms. This is where the master theorem comes into play. Divide &amp; Conquer algorithms can be expressed as \[ T(n) = a \cdot T\left(\frac{n}{b}\right) + f(n) \] where \( T(n) \) is an upper bound on the run time of the algorithm, \( n \) is the input size, \( a \) is the number of recursive calls that each individual call makes, \( \frac{n}{b} \) is the input size of the recursive calls, and \( f(n) \) is the the run time of the final call (the base case). Additionally, let \( c_{crit} = \frac{\log(number of subproblems)}{\log(relative subproblem size)} = \log_b a \).</p>
+<p>Given the above, the master theorem says that</p>
+<ul>
+<li>If there exists a \( c \lt c_{crit} \) such that \( f(n) = O\left(n^c\right) \), then \( T(n) = \Theta\left(n^{\log_b a}\right) \).</li>
+<li>If there exists a \( k \geq 0 \) such that \( f(n) = \Theta\left(n^{c_{crit}} log^k n\right) \), then \( T(n) = \Theta\left(n^{c_{crit}} log^{k+1} n \right) \).</li>
+<li>If there exists a \( c \gt c_{crit} \) such that \( f(n) = \Omega\left(n^c\right) \), <em>and</em> there exists a \( k \lt 1 \) and sufficiently large \( n \) such that \( a \cdot f\left(\frac{n}{b}\right) \leq k \cdot f(n) \), then \( T(n) = \Theta(f(n)) \).</li>
+</ul>
 <h1><a class="header" href="#data-structures" id="data-structures">Data Structures</a></h1>
 <p>These are fundamental structures in computer science which enable complex operations. This chapter only covers data structures that are significant/well-known in computer science, or that are broadly applicable to most computer science fields. You will not find data structures in this chapter that have very specific, niche use cases, or are only applicable to specific fields of computer science.</p>
 <h1><a class="header" href="#data-types" id="data-types">Data Types</a></h1>
@@ -358,8 +402,81 @@ Follows the rules of a set.</p>
 <h1><a class="header" href="#cryptography" id="cryptography">Cryptography</a></h1>
 <h1><a class="header" href="#other" id="other">Other</a></h1>
 <h1><a class="header" href="#data-stores" id="data-stores">Data Stores</a></h1>
+<h2><a class="header" href="#cap-theorem" id="cap-theorem">CAP Theorem</a></h2>
+<p>It is impossible for a distributed data store to guarantee more than 2 of the following:</p>
+<ul>
+<li>Consistency: Every read gets the most recent write (or an error).</li>
+<li>Availability: Every request receives a non-error response.</li>
+<li>Partition Tolerance: The system will function regardless of time delay or dropped messages.</li>
+</ul>
+<p>It is implied that a data store with network partitioning will therefore have to choose between consistency and availability.</p>
+<h2><a class="header" href="#acid-transactions" id="acid-transactions">ACID Transactions</a></h2>
+<p>An ACID transaction is one which satisfies the following 4 characteristics:</p>
+<ul>
+<li>Atomicity: Each transaction, regardless of how complex, will either completely succeed or completely fail, so there are no partial updates to the data store.</li>
+<li>Consistency: Transactions can only bring the database from one valid state to another.</li>
+<li>Isolation: Transactions processed concurrently are guaranteed to have the same end result as if they were processed sequentially.</li>
+<li>Durability: Once a transaction has been committed it will remain committed, regardless of system availability (i.e. data is stored in non-volatile memory).</li>
+</ul>
+<p>Note the difference between the &quot;consistency&quot; of an acid transaction and &quot;consistency&quot; in the CAP theorem.</p>
+<h2><a class="header" href="#base-models" id="base-models">BASE Models</a></h2>
+<p>A data store that follows the BASE model is one which satisfies the following 3 characteristics:</p>
+<ul>
+<li>Basic Availability: The data store stays available and able to process transactions, even if some nodes/clusters/partitions have failed.</li>
+<li>Soft State: Consistency of data is delegated to developers instead of being handled by the database.</li>
+<li>Eventual Consistency: At some point, data will converge to a consistent state.</li>
+</ul>
+<p>The &quot;eventual consistency&quot; clause need only be proven theoretically.</p>
+<h2><a class="header" href="#joins" id="joins">Joins</a></h2>
+<p>Traditionally, a join is an operation that combines data from two tables in a relational database management system. In practice though, many NoSQL environments can accommodate joins in some form, even if it is not built-in functionality.</p>
+<h3><a class="header" href="#inner-join" id="inner-join">Inner Join</a></h3>
+<p><strong>Common Syntax</strong>: <code>SELECT Employee.Name, Department.Name FROM Employees AS Employee INNER JOIN Departments AS Department ON Employee.DepartmentId = Department.DepartmentId</code>
+<strong>Effect</strong>: Combines rows in the Employees table with rows in the Departments table that have the same DepartmentId, ignoring nulls and rows with no match.</p>
+<h3><a class="header" href="#left-outer-join" id="left-outer-join">Left Outer Join</a></h3>
+<p><strong>Common Syntax</strong>: <code>SELECT Employee.Name, Department.Name FROM Employees AS Employee LEFT OUTER JOIN Departments AS Department ON Employee.DepartmentId = Department.DepartmentId</code>
+<strong>Effect</strong>: Combines rows in the Employees table with rows in the Departments table that have the same DepartmentId. It will keep all rows in the Employees table, and if there is no matching row in the Departments table it will use null for the Department values (Department.Name in this case). It will still ignore nulls and rows with no match from the Departments table.</p>
+<h3><a class="header" href="#right-outer-join" id="right-outer-join">Right Outer Join</a></h3>
+<p><strong>Common Syntax</strong>: <code>SELECT Employee.Name, Department.Name FROM Employees AS Employee RIGHT OUTER JOIN Departments AS Department ON Employee.DepartmentId = Department.DepartmentId</code>
+<strong>Effect</strong>: Combines rows in the Departments table with rows in the Employees table that have the same DepartmentId. It will keep all rows in the Departments table, and if there is no matching row in the Employees table it will use null for the Employee values (Employee.Name in this case). It will still ignore nulls and rows with no match from the Employees table. This is not a common join since it is equivalent to a Left Outer Join where the FROM and JOIN tables are swapped.</p>
+<h3><a class="header" href="#full-outer-join" id="full-outer-join">Full Outer Join</a></h3>
+<p><strong>Common Syntax</strong>: <code>SELECT Employee.Name, Department.Name FROM Employees AS Employee FULL OUTER JOIN Departments AS Department ON Employee.DepartmentId = Department.DepartmentId</code>
+<strong>Effect</strong>: Produces the union of a Left Outer Join and a Right Outer Join (all rows from both tables will be accounted for, and nulls will be inserted where matches weren't found).</p>
+<h3><a class="header" href="#cross-join-aka-cartesian-join" id="cross-join-aka-cartesian-join">Cross Join (A.K.A. Cartesian Join)</a></h3>
+<p><strong>Common Syntax</strong>: <code>SELECT Employee.Name, Department.Name FROM Employees AS Employee CROSS JOIN Departments AS Department</code>
+<strong>Effect</strong>: Produces the cartesian product of the two tables. A new row will be created for every combination of rows between the two tables.</p>
 <h1><a class="header" href="#relational-databases" id="relational-databases">Relational Databases</a></h1>
+<p>Relational data stores are the ones most people are comfortable with. They can be categorized by the following:</p>
+<ul>
+<li>Data is stored as relationships, in tabular form, usually representing an entity type.</li>
+<li>Robust support for joins.</li>
+<li>Requirement of ACID transactions.</li>
+<li>Out-of-the-box support for relational algebra (including aforementioned joins).</li>
+</ul>
+<p>A core aspect of designing relational databases is the normalization of data. That is: The process of structuring a relational database to reduce redundancies in the data and improve data integrity. Normalization is an incremental process, and the varying degrees of normalization are as follows:</p>
+<ol>
+<li>1NF (First Normal Form): Each column of a table must be atomic (contain non-separable values, such as strings, integers, and dates, but not lists). To achieve this, you can usually split the non-atomic columns into their own tables and use a key to relate them to the original table.</li>
+<li>2NF (Second Normal Form): Each non-key attribute (column) must be dependent on the whole table key (not just part of it). To achieve this, you can usually move a part of the key and its dependencies to a new table.</li>
+<li>3NF (Third Normal Form): Non-key attributes in the table are exclusively dependent on the key. In other words: No non-key attribute should depend on another non-key attribute. This can usually be achieved by moving the non-key attribute in question to a new table where its dependency is a key.</li>
+<li>BCNF (Boyce-Codd Normal Form): Each attribute represents a fact about &quot;the key, the whole key, and nothing but the key&quot;. This is often fixed by moving the attribute in question to a new table with only the parts of the original table's key that it cares about. This is an intermediary step between 3NF and 4NF but came about after 4NF, which is why it itself is not 4NF.</li>
+<li>4NF (Fourth Normal Form): Every multi-value dependency (2+ values) is either trivial (every {x, y, ...} combination is unique in the table for that relationship) or the independent key in the dependency is a candidate key (only exists once in the table). This is best demonstrated with an example: Suppose you have a table with a key {Restaurant Name, Pizza Type, Delivery Area}. In this example pizza type and delivery area both depend on the restaurant, but do not depend on each other, so it can be split into two tables, one with a {Restaurant Name, Delivery Area} key, and one with a {Restaurant Name, Pizza Type} key.</li>
+<li>5NF (Fifth Normal Form): Every non-trivial join relationship is implied by the keys in the table. You can verify 5NF by trying to split a table into new tables and then joining the split tables together. If there is no way to split the original table in a way that the new tables can be joined together to look identical to the original table, then that table satisfies 5NF.</li>
+</ol>
+<p>There are actually other normal forms, but they are more nuanced and not as frequently followed.</p>
 <h1><a class="header" href="#nosql" id="nosql">NoSQL</a></h1>
+<p>NoSQL databases are exactly what their title claims they are: non-SQL databases. The hallmarks of a NoSQL database are as follows:</p>
+<ul>
+<li>Data storage is flexible by virtue of not being tied to relationships.</li>
+<li>Adherance to the BASE model.</li>
+<li>Efficient implementations of partitioning, clustering, etc. for distribution of data.</li>
+</ul>
+<p>Unlike relational systems, which are commonly designed around the entities and normalization of data (relationships are handled later via joins), NoSQL databases are commonly designed with runtime queries in mind. Stores might be created specifically for one query, and there may be redundancies across stores for that reason. Often, redundancies can be avoided, but sometimes they can't be in the name of performance.</p>
+<p>There are many NoSQL data stores to choose from, but the most common ones fall under one of these categories:</p>
+<ul>
+<li>Key-Value: These act like dictionaries; They tie a key to a value. These are good for straight-forward lookups.</li>
+<li>Document: Document stores are a dubclass of Key-Value stores wherein all the data is contained in a document, which could have any structure desired (similar to objects in programming). Documents in a database usually do not need to have matching schema. The data in key-value stores are inherently opaque to the database, whereas a document store relies on the internal structure of the document to extract metadata that the database engine can use to optimize transactions. This difference is usually moot.</li>
+<li>Columnar: Columnar data stores store data in columns instead of rows. Traditional, row-based storage will serialize complete records together (e.g. for a &quot;Person&quot; with a &quot;Name&quot; and &quot;Age&quot;, you might see <code>John Smith, 30</code> and <code>Daisy Hopkins, 29</code> as the rows), whereas a columnar storage will serialize complete columns together (for the previous example: <code>Record 1: John Smith, Record 2: Daisy Hopkins</code> and <code>Record 1: 30, Record 2: 29</code>). The traditional, row-based storage lends itself to drawing relationships between tables, but for simple queries, the columnar store will be much more performant.</li>
+<li>Graph: Graphs store data...in a graph! This adds a layer of relationships to objects in the store, making it useful for storing information about networks and groups, as well as lending itself to pathfinding queries.</li>
+</ul>
 <h1><a class="header" href="#design-patterns" id="design-patterns">Design Patterns</a></h1>
 <h1><a class="header" href="#creational" id="creational">Creational</a></h1>
 <h1><a class="header" href="#structural" id="structural">Structural</a></h1>
