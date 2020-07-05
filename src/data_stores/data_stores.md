@@ -47,3 +47,20 @@ Traditionally, a join is an operation that combines data from two tables in a re
 ### Cross Join (A.K.A. Cartesian Join)
 **Common Syntax**: `SELECT Employee.Name, Department.Name FROM Employees AS Employee CROSS JOIN Departments AS Department`
 **Effect**: Produces the cartesian product of the two tables. A new row will be created for every combination of rows between the two tables.
+
+## Deciding What To Use
+So the lingering question is, "When do I use NoSQL, and when do I use SQL?" Well, in general, NoSQL is simply more flexible, and can be used in pretty much any situation. Most of the benefits of SQL are things that can be emulated for NoSQL within the calling code, but that does add complexity. Additionally, in the modern development environment, you can use different databases for different tasks, so keep that in mind.
+
+Here are some things to look for that might indicate SQL being better for your use case:
+- You need to accommodate a wide array of complex queries that combine results across different subdomains in your application (e.g. for generating reports).
+- You need to ensure ACID compliance (e.g. for financial applications).
+- You don't anticipate a lot of changes or growth.
+
+You might instead look into using NoSQL in the following cases:
+- You have budget restrictions (SQL is more expensive to scale).
+- The data structures being managed are volatile/variable.
+- You plan to analyze large amounts of data, but don't need to manipulate/write data in such quantities.
+
+Other, more specific use cases for NoSQL include:
+- Event capture and processing.
+- Storing data for intelligence engines to use.

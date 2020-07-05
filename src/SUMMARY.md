@@ -13,7 +13,6 @@
     - [Linear Data Structures](data_structures/linear_data_structures.md)
     - [Graphs](data_structures/graphs.md)
     - [Trees](data_structures/trees.md)
-    - [Cheat Sheet](data_structures/cheat_sheet.md)
 
 - [Algorithms](algorithms/algorithms.md)
     - [Top-Level](algorithms/top_level.md)

@@ -11,7 +11,7 @@ Countable, ordered values with no requirement for uniqueness.
 
 A series of mappings from unique keys to values.<br>
 
-### Associative Array
+#### Associative Array
 
 A.K.A. map or dictionary.<br>
 A subset of multimaps wherein only one value can be associated with a key.
@@ -43,6 +43,6 @@ Like a list, defined by the following behavior:
 
 The first element to enter the queue will be the first one to leave it.
 
-### Priority Queue
+#### Priority Queue
 
-Like a queue, but either the *enqueue* operation or the *dequeue* operation may re-order elements such that certain elements will leave the queue with a higher priority than other elements (first-in-first-out is not as strictly followed).
+A subcategory of queue where either the *enqueue* operation or the *dequeue* operation may re-order elements such that certain elements will leave the queue with a higher priority than other elements (first-in-first-out is not as strictly followed).
