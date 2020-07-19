@@ -1,5 +1,7 @@
 # Short Answer
 
+Note: In addition to what is provided here, you may be asked questions about anything you have put on your resume (e.g. How does X work in the Y programming language?).
+
 __Q:__ What is \\( 2^x \\)? Note: \\( x \\) will rarely be more than 12.
 
 __A:__ 2, 4, 8, 16, 32, 64, etc.

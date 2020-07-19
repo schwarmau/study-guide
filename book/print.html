@@ -469,13 +469,10 @@ return allOnes - x;
     </tr>
 </table>
 * "Min" here is used to refer to the value with the highest priority (it is what will be at the top of the heap).
-<h3><a class="header" href="#graph-terminology" id="graph-terminology">Graph Terminology</a></h3>
-<ul>
-<li>Graph: Essentially an unrooted tree with vertices/nodes that have values and edges that connect one vertex to another (and may also have values).</li>
-<li>Directed Graph: The edges of this type of graph can only be traversed in one direction during operations on the graph. A directed graph is acyclic (a DAG for short) if there is no way to return to a vertex once you have visited it.</li>
-<li>Adjacency List: This is a way of representing a graph as a list of node adjacencies.</li>
-<li>Flow Network: In this type of graph, edges represent flow and vertices have a capacity for flow. There are two exceptions in source nodes (vertices that only produce flow) and sink nodes (vertices that only consume flow).</li>
-</ul>
+<h4><a class="header" href="#graphs" id="graphs">Graphs</a></h4>
+<p>There aren't that many types of graphs, and the most common non-standard type is a flow network.</p>
+<p>Graphs can be searched in \( O(\left\lvert V \right\rvert + \left\lvert E \right\rvert) \) time using \( O(\left\lvert V \right\rvert) \) space, where \( \left\lvert V \right\rvert \) and \( \left\lvert E \right\rvert \) are the number of vertices and the number of edges, respectively.</p>
+<p>The performance of finding the shortest path between two vertices depends on the type of graph (directed, acyclic, does/does not contain negative edge weights, etc.) and the algorithm used. See more in the algorithms chapter.</p>
 <h1><a class="header" href="#data-types" id="data-types">Data Types</a></h1>
 <p>These are the building blocks of complex data structures.</p>
 <h1><a class="header" href="#primitive-types" id="primitive-types">Primitive Types</a></h1>
@@ -569,7 +566,7 @@ Key collisions can be handled either by implementing the array as an array of li
 <h3><a class="header" href="#hash-set" id="hash-set">Hash Set</a></h3>
 <p>Values are passed through a hash function to determine their placement within an array.<br>
 Follows the rules of a set.</p>
-<h1><a class="header" href="#graphs" id="graphs">Graphs</a></h1>
+<h1><a class="header" href="#graphs-1" id="graphs-1">Graphs</a></h1>
 <p>Graphs are collections of vertices (a.k.a. nodes) and edges, where each vertex has a collection of edges it touches, and each edge is composed of a <em>to</em> vertex and a <em>from</em> vertex. They are primarily used for spatial operations or relationship analysis.</p>
 <h3><a class="header" href="#directed-graph" id="directed-graph">Directed Graph</a></h3>
 <p>Edges can only be traversed one way. Vertices have their collection of edges split in two: one collection for incoming edges and one collection for outgoing edges.</p>
@@ -577,6 +574,8 @@ Follows the rules of a set.</p>
 <p>Directed graphs are acyclic if there is no way to traverse from any one vertex back to itself.</p>
 <h3><a class="header" href="#flow-networks" id="flow-networks">Flow Networks</a></h3>
 <p>Edges in a flow network are assigned a flow, and each vertex must have the same incoming flow as it has outgoing flow, except for source vertices, which may not have any incoming flow, and sink vertices, which may not have any outgoing flow. Edges are assigned a capacity, and the flow through edges cannot exceed their capacity.</p>
+<h3><a class="header" href="#adjacency-list" id="adjacency-list">Adjacency List</a></h3>
+<p>This is a way of representing a graph as a list of node adjacencies.</p>
 <h1><a class="header" href="#trees-1" id="trees-1">Trees</a></h1>
 <p>Trees are basically rooted graphs (interactions with trees begins at the same vertex each time, which is the root).</p>
 <p>Some terminology:</p>
@@ -719,8 +718,23 @@ Follows the rules of a set.</p>
 <h1><a class="header" href="#other-1" id="other-1">Other</a></h1>
 <h1><a class="header" href="#anti-patterns" id="anti-patterns">Anti-Patterns</a></h1>
 <h1><a class="header" href="#interview-prep" id="interview-prep">Interview Prep</a></h1>
+<p>In addition to the types of things in this section, which can generally be studied via flash cards and practice, you should also try to improve your outreach ahead of interviewing:</p>
+<ul>
+<li>Update your personal website (don't have one? make one)</li>
+<li>Update any professional social media profiles (e.g. LinkedIn)</li>
+<li>Update your resume (create a copy specifically for the position you're applying to) and CV</li>
+<li>Research the company</li>
+<li>Write a cover letter and send it either with your resume or after you submit your resume (you can look up what to write, there are many examples online)</li>
+<li>If the interview is planned more than a week in advance, it may be a good idea to write a confirmation letter to the interviewer a day or two before the interview. For example:
+&gt;I'm writing to confirm our meeting for Thursday at 9:30 AM. I look forward to discussing my application for the software engineering position at [Company Name]. Please contact me if you have any last-minute questions or comments.</li>
+<li>Bring a clean notepad and pen, copies of your resume, a list of references (if not included on resume), ID and Social Security card (in case you're asked to complete an application on the spot)</li>
+<li>Write down the name of your interviewer and the position and company you are interviewing for beforehand if you think you might forget any of those</li>
+<li>Turn off your phone for the interview</li>
+<li>Write a followup letter after the interview (next day) (you can look up what to write, there are many examples online)</li>
+</ul>
 <h1><a class="header" href="#personalanecdotal-questions" id="personalanecdotal-questions">Personal/Anecdotal Questions</a></h1>
 <p>Your goal when answering any of these questions is basically to talk about how amazing you are without sounding bragadocious.</p>
+<p>In addition to the below, common questions, anything on your resume is fair game; if you talked about specific projects on your resume, you should be prepared to answer questions about them.</p>
 <h3><a class="header" href="#why-are-you-interested-in-this-position" id="why-are-you-interested-in-this-position">Why are you interested in this position?</a></h3>
 <p>Talk about you, and mention how passionate/enthusiastic you are about this position.</p>
 <h3><a class="header" href="#what-makes-you-a-good-fit-for-this-position" id="what-makes-you-a-good-fit-for-this-position">What makes you a good fit for this position?</a></h3>
@@ -728,8 +742,9 @@ Follows the rules of a set.</p>
 <h3><a class="header" href="#what-are-your-greatest-strengths" id="what-are-your-greatest-strengths">What are your greatest strengths?</a></h3>
 <p>Brag about yourself, but make it relevant to the position.</p>
 <h3><a class="header" href="#what-are-your-greatest-weaknesses" id="what-are-your-greatest-weaknesses">What are your greatest weaknesses?</a></h3>
-<p>Your &quot;weaknesses&quot; should actually be strengths, but phrased like something you want to improve upon.<br>
-You could include a bit about receiving feedback from a co-worker/supervisor and improving yourself as a result.</p>
+<p>Your &quot;weaknesses&quot; should actually be strengths, but phrased like something you want to improve upon.
+<br>
+Sometimes I like to include a bit about how I've improved myself based on peer/supervisor feedback to demonstrate a drive to improve. Doing so requires a bit more honesty, since you probably wont get feedback about &quot;weaknesses that aren't really weaknesses&quot; from your coworkers, so I don't do this with managerial interviewers, but I might throw it in when I'm interviewing with people that would be peers if I got the job.</p>
 <h3><a class="header" href="#how-would-you-handle-a-dispute-with-a-co-worker" id="how-would-you-handle-a-dispute-with-a-co-worker">How would you handle a dispute with a co-worker?</a></h3>
 <p>Generic answer: compromise.</p>
 <h3><a class="header" href="#think-of-a-project-you-worked-on" id="think-of-a-project-you-worked-on">Think of a project you worked on...</a></h3>
@@ -739,10 +754,12 @@ You could include a bit about receiving feedback from a co-worker/supervisor and
 <li><strong>What did you learn from the project?</strong></li>
 </ul>
 <p>Pick a story where you're the hero if possible. If you aren't specifically asked to talk about how the project helped you grow, you should still talk about it anyways.</p>
-<p><br><br></p>
-<p>In addition to the above, common questions, anything on your resume is fair game; if you talked about specific projects on your resume, you should be prepared to answer questions about them.</p>
+<h3><a class="header" href="#what-made-you-want-to-leave-your-previouscurrent-job" id="what-made-you-want-to-leave-your-previouscurrent-job">What made you want to leave your previous/current job?</a></h3>
+<p>Whatever the real reason is, just say you're looking for &quot;greener pastures&quot; (i.e. a place to grow and expand your horizons). If you were to trash talk your old office it would make you look like a gossiper, and while there are other inoffensive and legitimate reasons to want to leave a job, none will likely sound as good as saying you want to grow as a professional and that you couldn't continue to do so at your old/current job.</p>
 <h1><a class="header" href="#occupational-questions" id="occupational-questions">Occupational Questions</a></h1>
+<p>These are question that will test your knowledge of the trade and your problem solving skills.</p>
 <h1><a class="header" href="#short-answer" id="short-answer">Short Answer</a></h1>
+<p>Note: In addition to what is provided here, you may be asked questions about anything you have put on your resume (e.g. How does X work in the Y programming language?).</p>
 <p><strong>Q:</strong> What is \( 2^x \)? Note: \( x \) will rarely be more than 12.</p>
 <p><strong>A:</strong> 2, 4, 8, 16, 32, 64, etc.</p>
 <br>
@@ -836,7 +853,24 @@ You could include a bit about receiving feedback from a co-worker/supervisor and
 <li>If you solve a problem quickly, and you notice that there are places in the solution that an exception could be thrown if it were converted to real code on a machine, then you might sound smarter if you ask if you should handle possible exceptions. This is rarely encountered, and rarely a requirement, just something to keep in mind if you breezed through the problem.</li>
 </ul>
 <h1><a class="header" href="#questions-to-ask" id="questions-to-ask">Questions To Ask</a></h1>
-<p>When it's your turn to ask questions, here are some good ones.</p>
+<p>When it's your turn to ask questions, I've come up with some good (in my opinion) ones. While it's true that <em>having</em> questions might make you look better, it probably doesn't matter much what the questions are, so unlike the other pages, this one isn't meant to be a guide or wiki.</p>
+<p>Note: Questions about salary, benefits, etc. should be saved for after you've been offered the job. This is not a resource for negotiation tactics, although such resources do exist.</p>
+<p>Note: If the answer to any of these questions is available on the company's website or was included in the job description, then don't ask it; It might just make you look worse for not knowing what you're applying for.</p>
+<p><strong>Q:</strong> What software development workflow/framework do you use?</p>
+<br>
+<p><strong>Q:</strong> What sorts of projects could I expect to be a part of if I were to work here?</p>
+<br>
+<p><strong>Q:</strong> What are parts of the job that you enjoy? (Alternatively: What's your favorite part of working here?)
+<br>
+Not applicable to interviewers who are not in the position you're applying for...</p>
+<br>
+<p><strong>Q:</strong> What does a typical work day look like for you?
+<br>
+Again: probably not relevant to ask people who aren't in the position you're applying for...</p>
+<br>
+<p><strong>Q:</strong> What technology stacks do you use?</p>
+<br>
+<p><strong>Q:</strong> What are some challenges that might be faced by someone just starting to work here?</p>
 <h1><a class="header" href="#other-resources" id="other-resources">Other Resources</a></h1>
 <h3><a class="header" href="#books" id="books">Books</a></h3>
 

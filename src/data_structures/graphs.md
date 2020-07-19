@@ -13,3 +13,6 @@ Directed graphs are acyclic if there is no way to traverse from any one vertex b
 ### Flow Networks
 
 Edges in a flow network are assigned a flow, and each vertex must have the same incoming flow as it has outgoing flow, except for source vertices, which may not have any incoming flow, and sink vertices, which may not have any outgoing flow. Edges are assigned a capacity, and the flow through edges cannot exceed their capacity.
+
+### Adjacency List
+This is a way of representing a graph as a list of node adjacencies.

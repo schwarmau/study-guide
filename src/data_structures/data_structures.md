@@ -212,8 +212,9 @@ If multiple values, the order is _Worst-Case_ | _Amortized_ .
 </table>
 * "Min" here is used to refer to the value with the highest priority (it is what will be at the top of the heap).
 
-### Graph Terminology
-- Graph: Essentially an unrooted tree with vertices/nodes that have values and edges that connect one vertex to another (and may also have values).
-- Directed Graph: The edges of this type of graph can only be traversed in one direction during operations on the graph. A directed graph is acyclic (a DAG for short) if there is no way to return to a vertex once you have visited it.
-- Adjacency List: This is a way of representing a graph as a list of node adjacencies.
-- Flow Network: In this type of graph, edges represent flow and vertices have a capacity for flow. There are two exceptions in source nodes (vertices that only produce flow) and sink nodes (vertices that only consume flow).
+#### Graphs
+There aren't that many types of graphs, and the most common non-standard type is a flow network.
+
+Graphs can be searched in \\( O(\left\lvert V \right\rvert + \left\lvert E \right\rvert) \\) time using \\( O(\left\lvert V \right\rvert) \\) space, where \\( \left\lvert V \right\rvert \\) and \\( \left\lvert E \right\rvert \\) are the number of vertices and the number of edges, respectively.
+
+The performance of finding the shortest path between two vertices depends on the type of graph (directed, acyclic, does/does not contain negative edge weights, etc.) and the algorithm used. See more in the algorithms chapter.
