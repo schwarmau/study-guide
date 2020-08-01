@@ -8,7 +8,7 @@ For the lazy among you...
 ### Abstract Data Types
 - [List](https://en.wikipedia.org/wiki/List_(abstract_data_type)): ordered, not necessarily unique, not finite
 - [Set](https://en.wikipedia.org/wiki/Set_(abstract_data_type)): not necessarily ordered, unique, not finite
-- [Tuple](https://en.wikipedia.org/wiki/Record_(computer_science)): ordered, not necessarily unique, finite
+- [Tuple](https://en.wikipedia.org/wiki/Record_(computer_science)): ordered, not necessarily unique, finite, a composite type in some (probably most) languages
 - [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)): first-in-last-out, `pop()`, `push()`, `peek()`
 - [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)): first-in-first-out, `enqueue()`, `dequeue()`, can be prioritized (priority queue)
 - [Bag](https://en.wikipedia.org/wiki/Set_(abstract_data_type)#Multiset): random or full reads only, `grab()`/`pick()`
@@ -73,7 +73,7 @@ If multiple values, the order is _Worst-Case_ | _Amortized_ .
 <br>
 ** &Theta;(1) when the last element is known; &Theta;(n) when the last element is unknown.
 <br>
-*** Insertions/Deletions from the middle of a list are dependent on the search algorithm used to find that element. There is a &Theta;(1) tax on that algorithm.
+*** Insertions/Deletions from the middle of a list are dependent how that element is found (it is &Theta;(n) to simply go to the i<sup>th</sup> element, but searching without knowing the index has a different complexity). There is a &Theta;(1) tax on that algorithm.
 <br>
 **** Not technically a list structure, but included to compare indexing.
 <br>

@@ -151,38 +151,38 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#abstract-data-types" id="abstract-data-types">Abstract Data Types</a></h1>
-<p>These are models defined by their behavior. Their implementations are not prescribed, which is what separates them from data structures.</p>
+<p>These are models defined by their behavior. Their implementations are not prescribed, which is what separates them from data structures and composite data types.</p>
 <h3><a class="header" href="#list" id="list">List</a></h3>
-<p>A.K.A. sequence.<br>
-Countable, ordered values with no requirement for uniqueness.</p>
+<p>A.K.A. sequence.</p>
+<p>Countable, ordered values with no requirement for uniqueness.</p>
+<p>Common operations include <code>getElementAt(i)</code>, <code>add(element)</code>, <code>add(element, index)</code>, <code>count()</code>, <code>first()</code> and <code>last()</code>.</p>
 <h3><a class="header" href="#multimap" id="multimap">Multimap</a></h3>
 <p>A series of mappings from unique keys to values.<br></p>
 <h4><a class="header" href="#associative-array" id="associative-array">Associative Array</a></h4>
-<p>A.K.A. map or dictionary.<br>
-A subset of multimaps wherein only one value can be associated with a key.</p>
+<p>A.K.A. map or dictionary.</p>
+<p>A subset of multimaps wherein only one value can be associated with a key.</p>
 <h3><a class="header" href="#set" id="set">Set</a></h3>
 <p>Unique, unordered values.</p>
 <h3><a class="header" href="#multiset" id="multiset">Multiset</a></h3>
-<p>A.K.A. bag.<br>
-Similar to a set, but can allow repeated (equal) values, which can either be treated as identical (counted, but not stored), or equivalent (counted and stored).<br>
-You could also think of it as similar to a list, but order doesn't matter.</p>
+<p>A.K.A. bag.</p>
+<p>Similar to a set, but can allow repeated (equal) values, which can either be treated as identical (counted, but not stored), or equivalent (counted and stored). You could also think of it as similar to a list, but order doesn't matter.</p>
 <h3><a class="header" href="#stack" id="stack">Stack</a></h3>
 <p>Like a list, defined by the following behavior:</p>
 <ul>
-<li><em>Push</em> an element by adding it to the front of the list.</li>
-<li><em>Pop</em> an element by removing it from the front of the list.</li>
-<li><em>Peek</em> by observing the front-most element.</li>
+<li><code>push(element)</code> an element by adding it to the front of the list.</li>
+<li><code>pop()</code> an element by removing it from the front of the list.</li>
+<li><code>peek()</code> by observing the front-most element.</li>
 </ul>
 <p>The last element to enter the stack will be the first one to leave it.</p>
 <h3><a class="header" href="#queue" id="queue">Queue</a></h3>
 <p>Like a list, defined by the following behavior:</p>
 <ul>
-<li><em>Enqueue</em> an element by adding it to the back of the list.</li>
-<li><em>Dequeue</em> an element by removing it from the front of the list.</li>
+<li><code>enqueue(element)</code> an element by adding it to the back of the list.</li>
+<li><code>dequeue()</code> an element by removing it from the front of the list.</li>
 </ul>
 <p>The first element to enter the queue will be the first one to leave it.</p>
 <h4><a class="header" href="#priority-queue" id="priority-queue">Priority Queue</a></h4>
-<p>A subcategory of queue where either the <em>enqueue</em> operation or the <em>dequeue</em> operation may re-order elements such that certain elements will leave the queue with a higher priority than other elements (first-in-first-out is not as strictly followed).</p>
+<p>A structure defined with the same behavior as a queue, except either the <code>enqueue()</code> operation or the <code>dequeue()</code> operation may re-order elements such that certain elements will leave the queue with a higher priority than other elements (first-in-first-out is not as strictly followed).</p>
 
                     </main>
 

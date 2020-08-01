@@ -158,7 +158,7 @@
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/List_(abstract_data_type)">List</a>: ordered, not necessarily unique, not finite</li>
 <li><a href="https://en.wikipedia.org/wiki/Set_(abstract_data_type)">Set</a>: not necessarily ordered, unique, not finite</li>
-<li><a href="https://en.wikipedia.org/wiki/Record_(computer_science)">Tuple</a>: ordered, not necessarily unique, finite</li>
+<li><a href="https://en.wikipedia.org/wiki/Record_(computer_science)">Tuple</a>: ordered, not necessarily unique, finite, a composite type in some (probably most) languages</li>
 <li><a href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">Stack</a>: first-in-last-out, <code>pop()</code>, <code>push()</code>, <code>peek()</code></li>
 <li><a href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)">Queue</a>: first-in-first-out, <code>enqueue()</code>, <code>dequeue()</code>, can be prioritized (priority queue)</li>
 <li><a href="https://en.wikipedia.org/wiki/Set_(abstract_data_type)#Multiset">Bag</a>: random or full reads only, <code>grab()</code>/<code>pick()</code></li>
@@ -221,7 +221,7 @@
 <br>
 ** &Theta;(1) when the last element is known; &Theta;(n) when the last element is unknown.
 <br>
-*** Insertions/Deletions from the middle of a list are dependent on the search algorithm used to find that element. There is a &Theta;(1) tax on that algorithm.
+*** Insertions/Deletions from the middle of a list are dependent how that element is found (it is &Theta;(n) to simply go to the i<sup>th</sup> element, but searching without knowing the index has a different complexity). There is a &Theta;(1) tax on that algorithm.
 <br>
 **** Not technically a list structure, but included to compare indexing.
 <br>

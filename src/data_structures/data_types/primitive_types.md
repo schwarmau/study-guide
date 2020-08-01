@@ -1,6 +1,7 @@
 # Primitive Types
 
-These are the possible representations of data at any given address.<br>
+These are the possible representations of data at any given address.
+
 Somewhat depends on the language, but this is the list Wikipedia uses.
 
 ### Boolean
@@ -9,7 +10,8 @@ True or false.
 
 ### Character
 
-Represents a symbol, usually in ASCII.<br>
+Represents a symbol, usually in ASCII.
+
 Interchangeable with integer in some languages.
 
 ### Floating-Point Numbers

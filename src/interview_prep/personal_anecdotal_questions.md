@@ -19,7 +19,7 @@ Brag about yourself, but make it relevant to the position.
 ### What are your greatest weaknesses?
 
 Your "weaknesses" should actually be strengths, but phrased like something you want to improve upon.
-<br>
+
 Sometimes I like to include a bit about how I've improved myself based on peer/supervisor feedback to demonstrate a drive to improve. Doing so requires a bit more honesty, since you probably wont get feedback about "weaknesses that aren't really weaknesses" from your coworkers, so I don't do this with managerial interviewers, but I might throw it in when I'm interviewing with people that would be peers if I got the job.
 
 ### How would you handle a dispute with a co-worker?
