@@ -15,3 +15,35 @@ Even if you're well-acquainted with the algorithms chapter you may still find th
 - Address all possible inputs. Usually edge cases can be solved with simple `if` statements, so it can be beneficial to address them last if time is a concern.
     - Remember: negatives, zeros, positives, minimums, maximums. Aside from those, it's situational (e.g. if using division with a variable denominator, you need to check that the denominator can never be 0).
 - If you solve a problem quickly, and you notice that there are places in the solution that an exception could be thrown if it were converted to real code on a machine, then you might sound smarter if you ask if you should handle possible exceptions. This is rarely encountered, and rarely a requirement, just something to keep in mind if you breezed through the problem.
+
+### Activity Selection
+
+### Huffman Encoding Tree
+
+### Closest Pair of Points
+
+### Longest Increasing Subsequence
+
+### Longest Common Subsequence
+
+### Hamming Distance
+
+### Levenshtein Distance
+
+### Bipartite Matching
+
+### Graph Coloring
+
+### Topological Sorting
+
+### Point Containment
+
+### Point Containment 2
+
+### Closest Point
+
+### Value Swap
+
+### Knapsack
+
+### FizzBuzz
