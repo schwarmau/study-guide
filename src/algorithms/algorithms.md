@@ -11,3 +11,5 @@ Ultimately, just knowing algorithms wont help _that_ much. Here are some places 
 - https://leetcode.com/
 - https://www.codewars.com/
 - https://www.kaggle.com/
+
+NOTE: Some algorithms simply have a link to other articles. Such is done for non-essential algorithms which are more valuable to simply know about than to know the implementation for.
