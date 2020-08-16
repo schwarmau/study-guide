@@ -211,6 +211,8 @@ return allOnes - x;
 <li>push - uploads local branch commits</li>
 </ul>
 <p>There are others, but these are the most commonly used.</p>
+<h3><a class="header" href="#other" id="other">Other</a></h3>
+<p>There aren't many common attacks that developers will have to actively defend against on a regular basis. From an application design standpoint you could encourage features such as 2-factor authentication, but at the end of the day it's not up to developers whether or not a feature is added. One attack developers will have to actively defend against is the injection attack. Defending against an injection attack is as simple as not letting user input go unchecked to a database query. This means <em>sanitizing</em> and <em>parameterizing</em> user input. Man-in-the-middle attacks are also something that needs to be addressed by developers. The defense against man-in-the-middle attacks is not letting sensitive information travel between services in a manner that makes the information easy to decrypt. In other words: sensitive information should always be encrypted before crossing services, and encrypted information should not travel with or near any information that could aid in decrypting it. While you might not personally have to deal with either of these things, it's not all that common to see a basic injection attack question in an interview (e.g. &quot;What's wrong with this code?&quot;).</p>
 
                     </main>
 
