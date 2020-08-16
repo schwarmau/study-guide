@@ -12,8 +12,10 @@ The Gale-Shapley algorithm starts by trying to match each student with the inter
 
 The runtime complexity of the algorithm is \\( O(n^2) \\).
 
-### Generate a pseudorandom number (Mersenne Twister, Linear Congruential Generator)
+### Generate a pseudorandom number (Mersenne Twister, Linear Congruential Generator, Blum Blum Shub)
 
 [Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister)
 
 [Linear Congruential Generator](https://en.wikipedia.org/wiki/Linear_congruential_generator)
+
+[Blum Blum Shub](https://en.wikipedia.org/wiki/Blum_Blum_Shub)

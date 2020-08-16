@@ -59,7 +59,3 @@ There are others, but these are the most commonly used.
 - push - uploads local branch commits
 
 There are others, but these are the most commonly used.
-
-### Other
-
-There aren't many common attacks that developers will have to actively defend against on a regular basis. From an application design standpoint you could encourage features such as 2-factor authentication, but at the end of the day it's not up to developers whether or not a feature is added. One attack developers will have to actively defend against is the injection attack. Defending against an injection attack is as simple as not letting user input go unchecked to a database query. This means _sanitizing_ and _parameterizing_ user input. Man-in-the-middle attacks are also something that needs to be addressed by developers. The defense against man-in-the-middle attacks is not letting sensitive information travel between services in a manner that makes the information easy to decrypt. In other words: sensitive information should always be encrypted before crossing services, and encrypted information should not travel with or near any information that could aid in decrypting it. While you might not personally have to deal with either of these things, it's not all that common to see a basic injection attack question in an interview (e.g. "What's wrong with this code?").

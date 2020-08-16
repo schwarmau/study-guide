@@ -4,6 +4,7 @@
 
 - [General Knowledge](general_knowledge/general_knowledge.md)
     - [Asymptotic Analysis](general_knowledge/asymptotic_analysis.md)
+    - [Security and Cryptography](general_knowledge/security_cryptography.md)
 
 - [Data Structures](data_structures/data_structures.md)
     - [Data Types](data_structures/data_types/data_types.md)
@@ -20,7 +21,6 @@
     - [Graph & Tree](algorithms/graph_tree.md)
     - [Sequence](algorithms/sequence.md)
     - [Sorting](algorithms/sorting.md)
-    - [Cryptography](algorithms/cryptography.md)
     - [Other](algorithms/other.md)
 
 - [Data Stores](data_stores/data_stores.md)
