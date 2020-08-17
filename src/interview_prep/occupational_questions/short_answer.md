@@ -105,3 +105,8 @@ __Q:__ What is a semaphore?
 
 __A:__ A variable used to signal the availability of a resource. Unlike locks/mutexes, a semaphore can allow multiple tasks to access a resource; a semaphore value of 0 indicates that no other tasks are allowed access to the resource, and a value of more than 0 allows that many more tasks to access the resource. Consequently, a binary semaphore (a semaphore only allowed to be 0 or 1) can be used to implement a lock/mutex.
 
+<br>
+
+__Q:__ Explain Agile software development.
+
+__A:__ Agile software development is a practice that promotes self-organization and cross-functionality within teams. It puts an emphasis on continual improvement and constant interactions with end users to be able to adjust the product as needed.
