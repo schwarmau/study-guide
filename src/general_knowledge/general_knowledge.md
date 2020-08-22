@@ -59,3 +59,13 @@ There are others, but these are the most commonly used.
 - push - uploads local branch commits
 
 There are others, but these are the most commonly used.
+
+### Memory
+
+Memory can be allocated on the stack or the heap.
+
+Stack allocation happens in a contiguous block of memory, and the compiler pre-determines the required space.
+
+Heap allocation happens during the execution of the program as per the instructions of the programmer. 
+
+The key difference is that programmers are responsible for allocating and deallocating heap memory.

@@ -24,7 +24,7 @@ __Q:__ What are parts of the job that you enjoy? (Alternatively: What's your fav
 
 <br>
 
-__Q:__ What does a typical work day look like for you?
+__Q:__ What does a typical work day look like for you? (How much of your day is spent coding? How many meetings do you have every week?)
 <br>
 <i>Again: probably not relevant to ask people who aren't in the position you're applying for...</i>
 
@@ -35,3 +35,11 @@ __Q:__ What technology stacks do you use?
 <br>
 
 __Q:__ What are some challenges that might be faced by someone just starting to work here?
+
+<br>
+
+__Q:__ I know that you guys deal in X (e.g. scalability). Are there opportunities within the company to learn more about X? Should I prepare myself with knowledge of X if I were to work here?
+
+<br>
+
+__Q:__ Could you tell me more about X that you use?

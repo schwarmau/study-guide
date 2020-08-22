@@ -173,22 +173,173 @@
 </li>
 <li>If you solve a problem quickly, and you notice that there are places in the solution that an exception could be thrown if it were converted to real code on a machine, then you might sound smarter if you ask if you should handle possible exceptions. This is rarely encountered, and rarely a requirement, just something to keep in mind if you breezed through the problem.</li>
 </ul>
+<p>NOTE: Problems covered in the algorithms chapter and in the general knowledge chapter are not included (e.g. Traveling Salesman, Levenshtein Distance, Value Swap).</p>
 <h3><a class="header" href="#activity-selection" id="activity-selection">Activity Selection</a></h3>
+<p>Given <em>n</em> activities and their start/end times, determine the maximum number of activities (and which activities those are) that a single person can participate in, assuming they cannot do multiple activities at once.</p>
+<p>A variation of this would be to not maximize the number of activities, but rather minimize the time in which you are not participating in an activity.</p>
 <h3><a class="header" href="#huffman-encoding-tree" id="huffman-encoding-tree">Huffman Encoding Tree</a></h3>
+<p>A Huffman code is a type of prefix code used for lossless compression.</p>
+<p>Given a set of symbols and their weights, find a set of codewords with minimum expected length (a tree with minimum weighted path length from the root).</p>
+<p>Basically, you want to create a tree where each leaf node is one of the symbols given. This is most easily made as a binary tree on paper, and generating the code for a symbol would thus involve treating left branches as adding a 0 and right branches as adding a 1. In general, you would like symbols weightest heaviest to have the smallest code, since they will be encountered the most often when compressing a file. </p>
+<p>It is also essential that codes cannot be confused. For example, if one symbol had the code 00 and another had the code 001 and another 1, then it would be impossible to tell in an encoding whether it means two symbols (00 and 1) or one (001). For this reason, the symbols will all need to be leaves in the tree.</p>
+<p>For example: given a = 0.1, b = 0.15, c = 0.30, d = 0.16, and 3 = 0.29, then the huffman codes would be 010, 011, 11, 00, and 10, in that order.</p>
 <h3><a class="header" href="#closest-pair-of-points" id="closest-pair-of-points">Closest Pair of Points</a></h3>
+<p>Given a set of points in a two dimension plane, determine which pair of points is the closest. </p>
+<p>You can, of course, challenge yourself to do this in 3-dimensional space, or beyond.</p>
 <h3><a class="header" href="#longest-increasing-subsequence" id="longest-increasing-subsequence">Longest Increasing Subsequence</a></h3>
+<p>Given an array of numbers, determine the start and stop index of the longest sequence of increasing numbers in the array (index <em>i</em> must be greater than index <em>i - 1</em> for each <em>i</em> in the sequence).</p>
 <h3><a class="header" href="#longest-common-subsequence" id="longest-common-subsequence">Longest Common Subsequence</a></h3>
+<p>Given two strings, determine the longest substring the two share.</p>
 <h3><a class="header" href="#hamming-distance" id="hamming-distance">Hamming Distance</a></h3>
-<h3><a class="header" href="#levenshtein-distance" id="levenshtein-distance">Levenshtein Distance</a></h3>
+<p>Perhaps a bit trivial: Given to equal-length strings, determine how many substitutions it would take to convert one to the other.</p>
 <h3><a class="header" href="#bipartite-matching" id="bipartite-matching">Bipartite Matching</a></h3>
+<p>Given <em>n</em> applicants and <em>m</em> jobs, as well as the knowledge of which jobs the applicants have applied to, determine the maxmimum number of applicants that can end up with jobs, and to which job each applicant would go in that case.</p>
 <h3><a class="header" href="#graph-coloring" id="graph-coloring">Graph Coloring</a></h3>
+<p>Given a graph and <em>n</em> colors, find a way to color each vertex of the graph such that no adjacent vertices share a color.</p>
 <h3><a class="header" href="#topological-sorting" id="topological-sorting">Topological Sorting</a></h3>
+<p>List the vertices of a directed acyclic graph in such a way that, for every edge <em>uv</em>, vertex <em>u</em> comes before vertex <em>v</em>. There can be more than one correct solution for some graphs.</p>
 <h3><a class="header" href="#point-containment" id="point-containment">Point Containment</a></h3>
+<p>Given a series of points on a 2-dimensional plane, determine the corners of the smallest box that encapsulates all points.</p>
+<p>Can you extend this to 3-dimensional space?</p>
 <h3><a class="header" href="#point-containment-2" id="point-containment-2">Point Containment 2</a></h3>
+<p>Given a polgyon in a 2-dimensional plane, and a point, determine if the point is within the polgyon.</p>
+<p>Can you extend this to 3-dimensional space?</p>
 <h3><a class="header" href="#closest-point" id="closest-point">Closest Point</a></h3>
-<h3><a class="header" href="#value-swap" id="value-swap">Value Swap</a></h3>
+<p>Given a starting point in 2-dimensional space and a list of other points in that space, determine which of the &quot;other&quot; points is closest to the starting point.</p>
+<p>Can you extend this to 3-dimensional space?</p>
 <h3><a class="header" href="#knapsack" id="knapsack">Knapsack</a></h3>
+<p>Given a weight limit and a list of objects that have a value and a weight, determine the maximum value of objects you can take without exceeding the weight limit.</p>
 <h3><a class="header" href="#fizzbuzz" id="fizzbuzz">FizzBuzz</a></h3>
+<p>Print the numbers from 1 to 100, except print &quot;fizz&quot; instead of multiples of 3, print &quot;buzz&quot; instead of multiples of 5, and print &quot;fizzbuzz&quot; instead of multiples of both 3 and 5.</p>
+<h3><a class="header" href="#parentheses-validation" id="parentheses-validation">Parentheses Validation</a></h3>
+<p>Given a string containing only parentheses, determine if each parenthese is matched correctly.</p>
+<p>For example: <code>(()())((()))</code> is correct, but <code>)(())()(</code> is not. Essentially, each open parenthese must have a closed parenthese after it, and each close parenthese must have an open parenthese before it (not necessarily <em>immediately</em> before or after).</p>
+<h3><a class="header" href="#generate-parentheses" id="generate-parentheses">Generate Parentheses</a></h3>
+<p>Given an integer, <em>n</em>, generate a list of all possible strings with <em>n</em> correctly matched parentheses.</p>
+<p>For example: When \( n = 3 \), the possible strings will be <code>((()))</code>, <code>(()())</code>, <code>(())()</code>, <code>()(())</code>, and <code>()()()</code>.</p>
+<h3><a class="header" href="#reverse-integer" id="reverse-integer">Reverse Integer</a></h3>
+<p>Given an integer, <em>n</em>, reverse its digits.</p>
+<p>For example: When <em>n</em> is <code>321</code>, its reverse would be <code>123</code>.</p>
+<h3><a class="header" href="#factor-combinations" id="factor-combinations">Factor Combinations</a></h3>
+<p>Given a number, <em>n</em>, find all combinations of factors of <em>n</em>, besides 1 and <em>n</em>, that can multiply to produce it.</p>
+<p>For example: When <em>n</em> is <code>12</code>, the factor combinations are <code>(6, 2)</code>, <code>(3, 4)</code>, and <code>(2, 2, 3)</code>, because each of those lists contain only factors of 12, and when they are multiplied together they produce 12. NOTE: <code>(6, 2)</code> and <code>(2, 6)</code> are considered equivalent for this matter, so only one is included.</p>
+<h3><a class="header" href="#fraction-to-recurring-decimal" id="fraction-to-recurring-decimal">Fraction to Recurring Decimal</a></h3>
+<p>Given a fraction with a recurring decimal, \( \frac a b \), output the decimal value, using an underscore (<code>_</code>) to represent the start of the repeating decimal.</p>
+<p>For example: When <em>a</em> is <code>1</code> and <em>b</em> is <code>3</code>, output <code>0.3_</code></p>
+<h3><a class="header" href="#anagrams" id="anagrams">Anagrams</a></h3>
+<p>Given two strings, determine if they are anagrams (two words that contain exactly the same letters, and the same amount of each letter to boot).</p>
+<p>As an additional challenge: Given an array of strings, determine if they are all anagrams.</p>
+<h3><a class="header" href="#longest-non-redundant-substring" id="longest-non-redundant-substring">Longest Non-Redundant Substring</a></h3>
+<p>Given a string, determine the starting and ending index of the longest contiguous sequence of distinct characters in the string.</p>
+<p>For example: In the string <code>abacdbca</code>, we find the longest sequence of distinct characters at <code>acdb</code> (start index 2, end index 5), as well as <code>dbca</code> (start index 4, end index 7).</p>
+<p>As an additional challenge: Find the longest substring with <em>at most k</em> distinct characters.</p>
+<h3><a class="header" href="#minimum-path-sum" id="minimum-path-sum">Minimum Path Sum</a></h3>
+<p>Given an <em>m</em> x <em>n</em> grid of non-negative numbers, find a path from top left to bottom right which minimizes the sum of all the numbers touched along the path.</p>
+<p>For example, the minimum path through</p>
+<pre><code>[
+    [1,3,1],
+    [1,5,1],
+    [4,2,1]
+]
+</code></pre>
+<p>is (0, 0) -&gt; (0, 1) -&gt; (0, 2) -&gt; (1, 2) -&gt; (2, 2).</p>
+<h3><a class="header" href="#tower-of-hanoi" id="tower-of-hanoi">Tower of Hanoi</a></h3>
+<p>Given <em>m</em> pegs and <em>n</em> discs (smallest to largest from top to bottom) which start on the first peg, determine what steps must be taken to move the discs to peg <em>k</em> and have them end up stacked in the same order in which they began.</p>
+<p>There are rules for what steps you can perform, though:</p>
+<ul>
+<li>Only one disc can be moved at a time</li>
+<li>You may only move the top-most disc on a peg</li>
+<li>You may only place a disc on top of a larger disc</li>
+</ul>
+<p>The tower of hanoi problem specifically dictates <em>m</em> is 3, although you can challenge yourself to consider more (the same algorithm can be reused, but it could also be made more efficient).</p>
+<h3><a class="header" href="#dining-philosophers" id="dining-philosophers">Dining Philosophers</a></h3>
+<p>Five silent philosophers sit at a round table with bowls of spaghetti. Forks are placed between each pair of adjacent philosophers.</p>
+<p>Each philosopher must alternately think and eat. However, a philosopher can only eat spaghetti when they have both left and right forks. Each fork can be held by only one philosopher and so a philosopher can use the fork only if it is not being used by another philosopher. After an individual philosopher finishes eating, they need to put down both forks so that the forks become available to others. A philosopher can only take the fork on their right or the one on their left as they become available and they cannot start eating before getting both forks.</p>
+<p>Eating is not limited by the remaining amounts of spaghetti or stomach space; an infinite supply and an infinite demand are assumed.</p>
+<p>The problem is how to design a discipline of behavior (a concurrent algorithm) such that no philosopher will starve; i.e., each can forever continue to alternate between eating and thinking, assuming that no philosopher can know when others may want to eat or think.</p>
+<p>This is more of a conceptual problem, as most programming languages have the functionality to achieve this built-in (you just have to know how to use it correctly). Concurrency was not discussed much in this guide, aside from small explaination in the design patterns chapter. For help you can research <em>semaphores</em>, <em>mutexes</em>, and <em>locks</em>.</p>
+<h3><a class="header" href="#eight-queens" id="eight-queens">Eight Queens</a></h3>
+<p>Place <em>n</em> queens on an <em>n</em> x <em>n</em> chessboard such that no two queens threaten each other (no two queens share the same column, row, or diagonal).</p>
+<p>If you figure out the solution by hand then it will be straightforward to convert to code, so don't try to solve the problem with guess and check as that would defeat the purpose; try to come up with an algorithmic way of arriving at the solution. Of course, reverse engineering is a valid skill so you could just ignore this advice.</p>
+<h3><a class="header" href="#two-generals" id="two-generals">Two Generals</a></h3>
+<p>The two generals' problem is another real-world problem, except this time it is merely food for thought, as the problem has no solution. It is therefore not <em>really</em> a whiteboard problem, but you might still be asked about this at an interview and tricked into trying to solve it just to see your thought process.</p>
+<p>Suppose there are two generals and their armies on either side of a castle, and they would like to coordinate to plan their attack, as they cannot win if only one army attacks at a time. However, it is a risky venture to contact one another as they will have to send someone through the castle grounds to the other side, and there's no guarantee that the person makes it. One general would like to start the joint attack at 8:00 am, so they send a messenger to the other general and decide &quot;if my messenger does not come back then I will send another, otherwise if my messenger comes back then I know the other general got the message&quot;. The other general receives the message and tells the messenger to return once it has responded to the first general, &quot;if the messenger does not come back then I don't know if the other general got my response--I will have to send another messenger&quot;. And so you see the conundrum. Neither general can have complete certainty that the other general is certain about the plan.</p>
+<h3><a class="header" href="#scheduling" id="scheduling">Scheduling</a></h3>
+<p>Given <em>n</em> students and <em>m</em> classes with a capacity and a start/end time, and each student has a known ranking of classes they would like to take, attempt to maximize total happiness amongst by assigning students to classes. The only rules are that the classes cannot exceed their capacity, and students cannot take two classes at the same time.</p>
+<p>A variation of this problem says that students need <em>k</em> minutes between classes to travel from classroom to classroom. Another says that some classes are dependent on others...this is a real-world problem so it can be extended in a lot of ways.</p>
+<h3><a class="header" href="#jump-game" id="jump-game">Jump Game</a></h3>
+<p>Given an array of positive integers, determine whether the &quot;jump game&quot; will end given a starting point, <em>i</em>.</p>
+<p>The jump game is where you move a number of &quot;spaces&quot; forward in the array equal to the current position you are at. The game ends if you can reach the last element of the array. The game cannot end if you are unable to move to a valid space, or if you are on a 0 which is not the last position of the array.</p>
+<p>There are several variations of this problem that you can tackle:</p>
+<ul>
+<li>The array can contain negative integers, which will cause you to move backwards.</li>
+<li>You can move a number of spaces <em>up to</em> the amount shown on your current space (absolute value to the left if using negative numbers).</li>
+<li>You are allowed to move <em>past</em> the end of the array, and wrap around to the other side (in which case the game will only fail to end if you encounter a 0 or a loop).</li>
+<li>You get to choose whether you want to move that many spaces forward or backward.</li>
+<li>You are not only given a starting index, <em>i</em>, but also an ending index, <em>j</em> (the same rules apply, except the game only ends if you can land on <em>j</em>).</li>
+<li>The game only ends when you land on a 0.</li>
+</ul>
+<p>The most complex ruleset for a challenge would be one in which you are given the choice of whether to move forward or backward, as well as the ability to loop around the array, as well as a target ending index.</p>
+<h3><a class="header" href="#bit-reversal" id="bit-reversal">Bit Reversal</a></h3>
+<p>Given an integer, <em>n</em>, reverse its bits.</p>
+<h3><a class="header" href="#string-permuations-around-capitals" id="string-permuations-around-capitals">String Permuations Around Capitals</a></h3>
+<p>Given a string, output all permutations of the string wherein capitalized letters remain in the same position.</p>
+<p>For example: The string <code>abCd</code> can be permuted as itself and as <code>adCb</code>, <code>baCd</code>, <code>bdCa</code>, <code>daCb</code>, and <code>dbCa</code>.</p>
+<p>A variation of this problem may have you only move numbers around within the confines of their surrounding capital letters. Other common variations simply change the pivot criteria (instead of keeping capital letters in the same place, you have to keep hyphens in the same place, and so on).</p>
+<h3><a class="header" href="#find-duplicates" id="find-duplicates">Find Duplicates</a></h3>
+<p>Given an array of integers, find all duplicates (the 2nd or greater instance) of numbers in the array.</p>
+<p>Challenge yourself to do this in \( O(n) \) time and \( O(1) \) wasted/extra space.</p>
+<h3><a class="header" href="#tic-tac-toe" id="tic-tac-toe">Tic-Tac-Toe</a></h3>
+<p>Implement Tic-Tac-Toe with an <em>N</em> x <em>N</em> board. What this means is to produce the following outputs and take the following inputs:</p>
+<pre><code>Output: What is N?
+Input [integer]
+Output: Would you like to play as X (go first) or O (go second)?
+Input: [X or O]
+// if user selects O, the program goes first and marks an empty space--in the challenge variation of this problem, the program will always make an optimal move
+Output: // after every move the program should print the current state of the NxN board
+// after every move the program should analyze whether there are N of one value (X or O) in a row, and if there are, output the winner
+Output: Where would you like to place your mark?
+Input: [(i, j), where i is the row, and j is the column]
+</code></pre>
+<p>A variation of this problem is: Given an <em>N</em> x <em>N</em> Tic-Tac-Toe board state, determine whether there is a guaranteed way to win for the player whose turn it is (no matter how the opponent plays, the player can win from this position). Traditionally this variation is only given for 3x3 Tic-Tac-Toe, so you can start with the assumption that <em>N</em> is always 3, and then try to program for a generic <em>N</em>.</p>
+<h3><a class="header" href="#indexed-binary-string" id="indexed-binary-string">Indexed Binary String</a></h3>
+<p>Given an index, <em>k</em>, find the \( k^{th} \) digit in a binary string. The binary string will be defined as follows:</p>
+<pre><code>binString = &quot;0&quot;;
+binString = binString + ~binString; // recall ~ is the NOT operator in some languages
+binString = binString + ~binString;
+// etc.
+</code></pre>
+<p>Thus the binary string ends up being 0 -&gt; 01 -&gt; 0110 -&gt; 01101001 -&gt; 0110100110010110...</p>
+<p>To provide a more formal definition of the binary string <em>is</em> the problem.</p>
+<h3><a class="header" href="#relationships" id="relationships">Relationships</a></h3>
+<p>Consider the following code (this intentionally contains oddities that don't exist in most langauges):</p>
+<pre><code>Class Person {
+    Public Person mom;
+    Public Person dad;
+    Public Person children[];
+
+    Public static bool areRelated(Person p1, Person p2, int gens) {
+        /* gens = number generations removed the two people must be within in order to be considered &quot;related&quot; */
+    }
+}
+</code></pre>
+<p>Your goal is to implement areRelated(...). It should return whether or not the two people are related, based on the generational threshold.</p>
+<p>The simple solution to this may yield a lot of wasted space or extraneous recursive calls for high values of <code>gens</code>. Try to think of a way to minimze that cost (of course, you may have already done it in your first solution, so don't spend too much time on this if you can't figure it out!).</p>
+<h3><a class="header" href="#php-exploit" id="php-exploit">PHP Exploit</a></h3>
+<p>Consider the following code:</p>
+<pre><code>$pin = $_GET['PIN'];
+$cmd = 'sudo testcode.py $pin;';
+exec($cmd);
+</code></pre>
+<p>How can someone remove all files from the host machine if a web app contains this code?</p>
+<p>Followup question: How do you know the system will allow you to run this code without prompting you for an admin password?</p>
+<h3><a class="header" href="#prime-sum" id="prime-sum">Prime Sum</a></h3>
+<p>Given an even number greater than 2, validate that it is the sum of 2 primes (this is a true fact) by finding those 2 primes and printing them. NOTE: 1 is not considered a prime number.</p>
+<h3><a class="header" href="#odd-one-out" id="odd-one-out">Odd One Out</a></h3>
+<p>Given a sorted list within which there are exactly two copies of each element, except for one, find which element is the one without a copy.</p>
+<p>There is a simple solution to this problem that can be performed in \( O(n) \) time. Your goal is to solve this problem in \( O(\log n) \) time.</p>
+<h3><a class="header" href="#greatest-common-denominator" id="greatest-common-denominator">Greatest Common Denominator</a></h3>
+<p>Find the greatest common denominator of 2 numbers.</p>
 
                     </main>
 

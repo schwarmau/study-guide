@@ -48,3 +48,7 @@ Don't take a side, even if your GPA is awesome or garbage. Say that the two migh
 ### What's your opinion of [political/religious topic]
 
 Regardless of your opinion, lie if necessary and take a middle road stance. Questions about politics and religion have no place in an interview, and is even illegal in many places. You may be within your rights to sue the company if you don't get the job since and it seems like it could have been a result of this question. Even if you get the job, the kind of place that asks this question probably isn't the kind you should be working for.
+
+### What are your hobbies outside of work?
+
+Be honest, but pick your most attractive hobbies from a professional's perspective. Playing video games isn't really an attractive hobby. Any hobby in which you make something (whether it's coding or not) would be good to include on your list.
