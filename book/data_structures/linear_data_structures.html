@@ -4,6 +4,9 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Linear Data Structures - Software Engineering Study Guide</title>
+                
+
+        <!-- Custom HTML head -->
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -11,17 +14,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/general.css">
         <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
-
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
-
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
         <link rel="stylesheet" href="../tomorrow-night.css">
@@ -29,17 +32,14 @@
 
         <!-- Custom theme stylesheets -->
         
-
-        
-        <!-- MathJax -->
+                <!-- MathJax -->
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    </head>
+            </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -84,8 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="../general_knowledge/general_knowledge.html"><strong aria-hidden="true">1.</strong> General Knowledge</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../general_knowledge/asymptotic_analysis.html"><strong aria-hidden="true">1.1.</strong> Asymptotic Analysis</a></li><li class="chapter-item expanded "><a href="../general_knowledge/security_cryptography.html"><strong aria-hidden="true">1.2.</strong> Security and Cryptography</a></li></ol></li><li class="chapter-item expanded "><a href="../data_structures/data_structures.html"><strong aria-hidden="true">2.</strong> Data Structures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_structures/data_types/data_types.html"><strong aria-hidden="true">2.1.</strong> Data Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_structures/data_types/primitive_types.html"><strong aria-hidden="true">2.1.1.</strong> Primitive Types</a></li><li class="chapter-item expanded "><a href="../data_structures/data_types/composite_types.html"><strong aria-hidden="true">2.1.2.</strong> Composite Types</a></li><li class="chapter-item expanded "><a href="../data_structures/data_types/abstract_data_types.html"><strong aria-hidden="true">2.1.3.</strong> Abstract Data Types</a></li></ol></li><li class="chapter-item expanded "><a href="../data_structures/linear_data_structures.html" class="active"><strong aria-hidden="true">2.2.</strong> Linear Data Structures</a></li><li class="chapter-item expanded "><a href="../data_structures/graphs.html"><strong aria-hidden="true">2.3.</strong> Graphs</a></li><li class="chapter-item expanded "><a href="../data_structures/trees.html"><strong aria-hidden="true">2.4.</strong> Trees</a></li></ol></li><li class="chapter-item expanded "><a href="../algorithms/algorithms.html"><strong aria-hidden="true">3.</strong> Algorithms</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../algorithms/top_level.html"><strong aria-hidden="true">3.1.</strong> Top-Level</a></li><li class="chapter-item expanded "><a href="../algorithms/combinatorics.html"><strong aria-hidden="true">3.2.</strong> Combinatorics</a></li><li class="chapter-item expanded "><a href="../algorithms/graph_tree.html"><strong aria-hidden="true">3.3.</strong> Graph &amp; Tree</a></li><li class="chapter-item expanded "><a href="../algorithms/sequence.html"><strong aria-hidden="true">3.4.</strong> Sequence</a></li><li class="chapter-item expanded "><a href="../algorithms/sorting.html"><strong aria-hidden="true">3.5.</strong> Sorting</a></li><li class="chapter-item expanded "><a href="../algorithms/other.html"><strong aria-hidden="true">3.6.</strong> Other</a></li></ol></li><li class="chapter-item expanded "><a href="../data_stores/data_stores.html"><strong aria-hidden="true">4.</strong> Data Stores</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_stores/relational_databases.html"><strong aria-hidden="true">4.1.</strong> Relational Databases</a></li><li class="chapter-item expanded "><a href="../data_stores/nosql.html"><strong aria-hidden="true">4.2.</strong> NoSQL</a></li></ol></li><li class="chapter-item expanded "><a href="../design_patterns/design_patterns.html"><strong aria-hidden="true">5.</strong> Design Patterns</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../design_patterns/creational.html"><strong aria-hidden="true">5.1.</strong> Creational</a></li><li class="chapter-item expanded "><a href="../design_patterns/structural.html"><strong aria-hidden="true">5.2.</strong> Structural</a></li><li class="chapter-item expanded "><a href="../design_patterns/behavioral.html"><strong aria-hidden="true">5.3.</strong> Behavioral</a></li><li class="chapter-item expanded "><a href="../design_patterns/functional.html"><strong aria-hidden="true">5.4.</strong> Functional</a></li><li class="chapter-item expanded "><a href="../design_patterns/concurrency.html"><strong aria-hidden="true">5.5.</strong> Concurrency</a></li><li class="chapter-item expanded "><a href="../design_patterns/architectural.html"><strong aria-hidden="true">5.6.</strong> Architectural</a></li><li class="chapter-item expanded "><a href="../design_patterns/cloud_distributed.html"><strong aria-hidden="true">5.7.</strong> Cloud Distributed</a></li><li class="chapter-item expanded "><a href="../design_patterns/testing.html"><strong aria-hidden="true">5.8.</strong> Testing</a></li><li class="chapter-item expanded "><a href="../design_patterns/other.html"><strong aria-hidden="true">5.9.</strong> Other</a></li><li class="chapter-item expanded "><a href="../design_patterns/anti_patterns.html"><strong aria-hidden="true">5.10.</strong> Anti-Patterns</a></li></ol></li><li class="chapter-item expanded "><a href="../interview_prep/interview_prep.html"><strong aria-hidden="true">6.</strong> Interview Prep</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../interview_prep/personal_anecdotal_questions.html"><strong aria-hidden="true">6.1.</strong> Personal/Anecdotal Questions</a></li><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/occupational_questions.html"><strong aria-hidden="true">6.2.</strong> Occupational Questions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/short_answer.html"><strong aria-hidden="true">6.2.1.</strong> Short Answer</a></li><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/whiteboard.html"><strong aria-hidden="true">6.2.2.</strong> Whiteboard</a></li></ol></li><li class="chapter-item expanded "><a href="../interview_prep/questions_to_ask.html"><strong aria-hidden="true">6.3.</strong> Questions To Ask</a></li></ol></li><li class="chapter-item expanded "><a href="../other_resources.html">Other Resources</a></li></ol>
-            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="../general_knowledge/general_knowledge.html"><strong aria-hidden="true">1.</strong> General Knowledge</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../general_knowledge/asymptotic_analysis.html"><strong aria-hidden="true">1.1.</strong> Asymptotic Analysis</a></li><li class="chapter-item expanded "><a href="../general_knowledge/security_cryptography.html"><strong aria-hidden="true">1.2.</strong> Security and Cryptography</a></li></ol></li><li class="chapter-item expanded "><a href="../data_structures/data_structures.html"><strong aria-hidden="true">2.</strong> Data Structures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_structures/data_types/data_types.html"><strong aria-hidden="true">2.1.</strong> Data Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_structures/data_types/primitive_types.html"><strong aria-hidden="true">2.1.1.</strong> Primitive Types</a></li><li class="chapter-item expanded "><a href="../data_structures/data_types/composite_types.html"><strong aria-hidden="true">2.1.2.</strong> Composite Types</a></li><li class="chapter-item expanded "><a href="../data_structures/data_types/abstract_data_types.html"><strong aria-hidden="true">2.1.3.</strong> Abstract Data Types</a></li></ol></li><li class="chapter-item expanded "><a href="../data_structures/linear_data_structures.html" class="active"><strong aria-hidden="true">2.2.</strong> Linear Data Structures</a></li><li class="chapter-item expanded "><a href="../data_structures/graphs.html"><strong aria-hidden="true">2.3.</strong> Graphs</a></li><li class="chapter-item expanded "><a href="../data_structures/trees.html"><strong aria-hidden="true">2.4.</strong> Trees</a></li></ol></li><li class="chapter-item expanded "><a href="../algorithms/algorithms.html"><strong aria-hidden="true">3.</strong> Algorithms</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../algorithms/top_level.html"><strong aria-hidden="true">3.1.</strong> Top-Level</a></li><li class="chapter-item expanded "><a href="../algorithms/combinatorics.html"><strong aria-hidden="true">3.2.</strong> Combinatorics</a></li><li class="chapter-item expanded "><a href="../algorithms/graph_tree.html"><strong aria-hidden="true">3.3.</strong> Graph &amp; Tree</a></li><li class="chapter-item expanded "><a href="../algorithms/sequence.html"><strong aria-hidden="true">3.4.</strong> Sequence</a></li><li class="chapter-item expanded "><a href="../algorithms/sorting.html"><strong aria-hidden="true">3.5.</strong> Sorting</a></li><li class="chapter-item expanded "><a href="../algorithms/other.html"><strong aria-hidden="true">3.6.</strong> Other</a></li></ol></li><li class="chapter-item expanded "><a href="../data_stores/data_stores.html"><strong aria-hidden="true">4.</strong> Data Stores</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_stores/relational_databases.html"><strong aria-hidden="true">4.1.</strong> Relational Databases</a></li><li class="chapter-item expanded "><a href="../data_stores/nosql.html"><strong aria-hidden="true">4.2.</strong> NoSQL</a></li></ol></li><li class="chapter-item expanded "><a href="../design_patterns/design_patterns.html"><strong aria-hidden="true">5.</strong> Design Patterns</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../design_patterns/creational.html"><strong aria-hidden="true">5.1.</strong> Creational</a></li><li class="chapter-item expanded "><a href="../design_patterns/structural.html"><strong aria-hidden="true">5.2.</strong> Structural</a></li><li class="chapter-item expanded "><a href="../design_patterns/behavioral.html"><strong aria-hidden="true">5.3.</strong> Behavioral</a></li><li class="chapter-item expanded "><a href="../design_patterns/functional.html"><strong aria-hidden="true">5.4.</strong> Functional</a></li><li class="chapter-item expanded "><a href="../design_patterns/concurrency.html"><strong aria-hidden="true">5.5.</strong> Concurrency</a></li><li class="chapter-item expanded "><a href="../design_patterns/architectural.html"><strong aria-hidden="true">5.6.</strong> Architectural</a></li><li class="chapter-item expanded "><a href="../design_patterns/cloud_distributed.html"><strong aria-hidden="true">5.7.</strong> Cloud Distributed</a></li><li class="chapter-item expanded "><a href="../design_patterns/testing.html"><strong aria-hidden="true">5.8.</strong> Testing</a></li><li class="chapter-item expanded "><a href="../design_patterns/other.html"><strong aria-hidden="true">5.9.</strong> Other</a></li><li class="chapter-item expanded "><a href="../design_patterns/anti_patterns.html"><strong aria-hidden="true">5.10.</strong> Anti-Patterns</a></li></ol></li><li class="chapter-item expanded "><a href="../interview_prep/interview_prep.html"><strong aria-hidden="true">6.</strong> Interview Prep</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../interview_prep/personal_anecdotal_questions.html"><strong aria-hidden="true">6.1.</strong> Personal/Anecdotal Questions</a></li><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/occupational_questions.html"><strong aria-hidden="true">6.2.</strong> Occupational Questions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/short_answer.html"><strong aria-hidden="true">6.2.1.</strong> Short Answer</a></li><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/whiteboard.html"><strong aria-hidden="true">6.2.2.</strong> Whiteboard</a></li></ol></li><li class="chapter-item expanded "><a href="../interview_prep/questions_to_ask.html"><strong aria-hidden="true">6.3.</strong> Questions To Ask</a></li></ol></li><li class="chapter-item expanded "><a href="../other_resources.html">Other Resources</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -109,27 +108,24 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
-                    </div>
+                                            </div>
 
                     <h1 class="menu-title">Software Engineering Study Guide</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
+                                                                        
                     </div>
                 </div>
 
-                
-                <div id="search-wrapper" class="hidden">
+                                <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -138,7 +134,6 @@
                     </div>
                 </div>
                 
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -150,15 +145,15 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#linear-data-structures" id="linear-data-structures">Linear Data Structures</a></h1>
-<h3><a class="header" href="#dynamic-array" id="dynamic-array">Dynamic Array</a></h3>
+                        <h1 id="linear-data-structures"><a class="header" href="#linear-data-structures">Linear Data Structures</a></h1>
+<h3 id="dynamic-array"><a class="header" href="#dynamic-array">Dynamic Array</a></h3>
 <p>This is array that can shrink or expand in size. A somewhat basic implementation of this is creating a new array with length of, for example: 16. When the array becomes full, a new array is created with more spaces (different implementations may create a different amount of spaces), for example: 32. Then, all the values in the old array are copied into the new array. The same operation may happen in reverse if enough values are deleted from the array.</p>
 <p>The average cost to insert or delete at a random index is therefore \( \Theta(1) \), but to insert or delete at the beginning or end of the array is \( O(n) \). Dynamic arrays usually waste \( \Omega(n) \) space when expanding.</p>
-<h3><a class="header" href="#hashed-array-tree" id="hashed-array-tree">Hashed Array Tree</a></h3>
+<h3 id="hashed-array-tree"><a class="header" href="#hashed-array-tree">Hashed Array Tree</a></h3>
 <p>Despite the name, this is not really a tree; It's a dynamic array. The difference is that elements are stored as lists. </p>
 <p>For example, your base array may start with a capacity of 16. Actually, it would be an array of length 4, where each element is a pointer to another array of length 4. </p>
 <p>This approach puts some restrictions on when it can be expanded and shrunk, but it means that you only have to move 4 elements (the pointers) instead of 16 when you do expand it. The insertion and deletion performance of the hashed array tree is therefore the same as in a standard dynamic array, but it only wastes \( O\left(\sqrt n\right) \) space when expanding.</p>
-<h3><a class="header" href="#singularly-linked-list" id="singularly-linked-list">Singularly Linked List</a></h3>
+<h3 id="singularly-linked-list"><a class="header" href="#singularly-linked-list">Singularly Linked List</a></h3>
 <p>A list that consists of a sequence of nodes, which each contain a value and a reference to the next node in the list (or null if it is the last node).</p>
 <ul>
 <li>Searchable in \( O(n) \) time (unsorted). Variable when sorted (depends on algorithm).</li>
@@ -166,16 +161,16 @@
 <li>Reading, inserting or deleting at the beginning of the list should take \( O(1) \) time.</li>
 <li>Insert, delete, or read in the middle of the list in <em>search time</em> + \( \Theta(1) \) (always \( O(i) \) time if acting on index \( i \ne n-1 \)).</li>
 </ul>
-<h3><a class="header" href="#doubly-linked-list" id="doubly-linked-list">Doubly Linked List</a></h3>
+<h3 id="doubly-linked-list"><a class="header" href="#doubly-linked-list">Doubly Linked List</a></h3>
 <p>The main difference between a doubly linked list and a singularly linked list is that nodes also carry a reference to the previous node. This may lend itself to sorting algorithms, and if the last element is known in the implementation, then it will always take at most \( O\left(\frac n 2 \right) \) time to read/insert/delete at a specific index (time is still that of a singularly linked list if looking for an element by value instead of index).</p>
-<h3><a class="header" href="#circularly-linked-list" id="circularly-linked-list">Circularly Linked List</a></h3>
+<h3 id="circularly-linked-list"><a class="header" href="#circularly-linked-list">Circularly Linked List</a></h3>
 <p>A circularly linked list is simply a linked list where the &quot;next&quot; pointer of the last node points to the first node. There is no substantial performance difference between this and a singularly linked list. A circularly linked list can optionally be implemented with doubly linked nodes, thus gaining the benefits of a doubly linked list.</p>
-<h3><a class="header" href="#skip-list" id="skip-list">Skip List</a></h3>
+<h3 id="skip-list"><a class="header" href="#skip-list">Skip List</a></h3>
 <p>A skip list is quite a unique list. It is a tiered structure, where each tier is itself a sorted list (commonly a linked list). At the top you have a list with few elements, and as you progress down, the lists gain more and more elements (including the elements from previous tiers). Usually there is some sort of algorithm to determine which elements go in the top tier (usually the most frequently accessed elements end up there). This kind of data structure is known as a probabilistic data structure.</p>
 <p>A search through a skip list would start at the top and work its way down when it cannot find the desired element. It goes through elements until it passes from a smaller element to a larger element than the one desired, then it will go down to the next tier and search between those two elements in the that tier, and so on. To go to a specific position it can simply jump to the bottom tier or, if it knows the highest tier that the index is on, it can jump straight to the highest tier with that index.</p>
 <p>This kind of list is good for storing data with values of varying importance, such as data following a normal curve.</p>
 <p>To achieve the performance benefits of a skip list, you must accept wasted space. A skip list will use \( O(n \log n) \) space in the worst case, but \( O(n) \) on average in exchange for searching, inserting, and deleting in \( O (\log n) \) time on average and \( O(n) \) time in the worst case.</p>
-<h3><a class="header" href="#hash-table" id="hash-table">Hash Table</a></h3>
+<h3 id="hash-table"><a class="header" href="#hash-table">Hash Table</a></h3>
 <p>An implementation of an associative array that passes provided keys through a hash function to determine where in an array they go.</p>
 <p>Key collisions can be handled either by implementing the array as an array of lists (multiple keys can map to the same place, but their order is tracked so as to know which value in the list belongs to which key) or by moving the value to the next available space.</p>
 <p>Hash tables...</p>
@@ -184,80 +179,62 @@
 <li>are thread-safe, but not performant.</li>
 </ul>
 <p>Hash tables will use the standard \( O(n) \) space with constant time (\( O(1) \)) searches, insertions, and deletions on average (\( O(n) \) in the worst case).</p>
-<h3><a class="header" href="#hash-map" id="hash-map">Hash Map</a></h3>
+<h3 id="hash-map"><a class="header" href="#hash-map">Hash Map</a></h3>
 <p>This is a volatile variation of the hash table, which...</p>
 <ul>
 <li>allows nulls for keys and values.</li>
 <li>is not thread-safe, but is performant.</li>
 </ul>
-<h3><a class="header" href="#hash-set" id="hash-set">Hash Set</a></h3>
+<h3 id="hash-set"><a class="header" href="#hash-set">Hash Set</a></h3>
 <p>A set in which values are passed through a hash function to determine their placement within an array. All other rules of sets are followed (unique, unordered values).</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
-                            <a rel="prev" href="../data_structures/data_types/abstract_data_types.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="../data_structures/data_types/abstract_data_types.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-
-                        
-                            <a rel="next" href="../data_structures/graphs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="../data_structures/graphs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
-                    <a rel="prev" href="../data_structures/data_types/abstract_data_types.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="../data_structures/data_types/abstract_data_types.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-
-                
-                    <a rel="next" href="../data_structures/graphs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="../data_structures/graphs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
-            </nav>
+                            </nav>
 
         </div>
 
         
-
-        
-
         
         
-        
-        <script type="text/javascript">
-            window.playpen_copyable = true;
+                <script type="text/javascript">
+            window.playground_copyable = true;
         </script>
         
-
         
-
-        
-        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
-
         <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
-
         
-
     </body>
 </html>

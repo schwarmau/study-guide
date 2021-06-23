@@ -4,6 +4,9 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Trees - Software Engineering Study Guide</title>
+                
+
+        <!-- Custom HTML head -->
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -11,17 +14,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/general.css">
         <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
-
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
-
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
         <link rel="stylesheet" href="../tomorrow-night.css">
@@ -29,17 +32,14 @@
 
         <!-- Custom theme stylesheets -->
         
-
-        
-        <!-- MathJax -->
+                <!-- MathJax -->
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    </head>
+            </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -84,8 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="../general_knowledge/general_knowledge.html"><strong aria-hidden="true">1.</strong> General Knowledge</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../general_knowledge/asymptotic_analysis.html"><strong aria-hidden="true">1.1.</strong> Asymptotic Analysis</a></li><li class="chapter-item expanded "><a href="../general_knowledge/security_cryptography.html"><strong aria-hidden="true">1.2.</strong> Security and Cryptography</a></li></ol></li><li class="chapter-item expanded "><a href="../data_structures/data_structures.html"><strong aria-hidden="true">2.</strong> Data Structures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_structures/data_types/data_types.html"><strong aria-hidden="true">2.1.</strong> Data Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_structures/data_types/primitive_types.html"><strong aria-hidden="true">2.1.1.</strong> Primitive Types</a></li><li class="chapter-item expanded "><a href="../data_structures/data_types/composite_types.html"><strong aria-hidden="true">2.1.2.</strong> Composite Types</a></li><li class="chapter-item expanded "><a href="../data_structures/data_types/abstract_data_types.html"><strong aria-hidden="true">2.1.3.</strong> Abstract Data Types</a></li></ol></li><li class="chapter-item expanded "><a href="../data_structures/linear_data_structures.html"><strong aria-hidden="true">2.2.</strong> Linear Data Structures</a></li><li class="chapter-item expanded "><a href="../data_structures/graphs.html"><strong aria-hidden="true">2.3.</strong> Graphs</a></li><li class="chapter-item expanded "><a href="../data_structures/trees.html" class="active"><strong aria-hidden="true">2.4.</strong> Trees</a></li></ol></li><li class="chapter-item expanded "><a href="../algorithms/algorithms.html"><strong aria-hidden="true">3.</strong> Algorithms</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../algorithms/top_level.html"><strong aria-hidden="true">3.1.</strong> Top-Level</a></li><li class="chapter-item expanded "><a href="../algorithms/combinatorics.html"><strong aria-hidden="true">3.2.</strong> Combinatorics</a></li><li class="chapter-item expanded "><a href="../algorithms/graph_tree.html"><strong aria-hidden="true">3.3.</strong> Graph &amp; Tree</a></li><li class="chapter-item expanded "><a href="../algorithms/sequence.html"><strong aria-hidden="true">3.4.</strong> Sequence</a></li><li class="chapter-item expanded "><a href="../algorithms/sorting.html"><strong aria-hidden="true">3.5.</strong> Sorting</a></li><li class="chapter-item expanded "><a href="../algorithms/other.html"><strong aria-hidden="true">3.6.</strong> Other</a></li></ol></li><li class="chapter-item expanded "><a href="../data_stores/data_stores.html"><strong aria-hidden="true">4.</strong> Data Stores</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_stores/relational_databases.html"><strong aria-hidden="true">4.1.</strong> Relational Databases</a></li><li class="chapter-item expanded "><a href="../data_stores/nosql.html"><strong aria-hidden="true">4.2.</strong> NoSQL</a></li></ol></li><li class="chapter-item expanded "><a href="../design_patterns/design_patterns.html"><strong aria-hidden="true">5.</strong> Design Patterns</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../design_patterns/creational.html"><strong aria-hidden="true">5.1.</strong> Creational</a></li><li class="chapter-item expanded "><a href="../design_patterns/structural.html"><strong aria-hidden="true">5.2.</strong> Structural</a></li><li class="chapter-item expanded "><a href="../design_patterns/behavioral.html"><strong aria-hidden="true">5.3.</strong> Behavioral</a></li><li class="chapter-item expanded "><a href="../design_patterns/functional.html"><strong aria-hidden="true">5.4.</strong> Functional</a></li><li class="chapter-item expanded "><a href="../design_patterns/concurrency.html"><strong aria-hidden="true">5.5.</strong> Concurrency</a></li><li class="chapter-item expanded "><a href="../design_patterns/architectural.html"><strong aria-hidden="true">5.6.</strong> Architectural</a></li><li class="chapter-item expanded "><a href="../design_patterns/cloud_distributed.html"><strong aria-hidden="true">5.7.</strong> Cloud Distributed</a></li><li class="chapter-item expanded "><a href="../design_patterns/testing.html"><strong aria-hidden="true">5.8.</strong> Testing</a></li><li class="chapter-item expanded "><a href="../design_patterns/other.html"><strong aria-hidden="true">5.9.</strong> Other</a></li><li class="chapter-item expanded "><a href="../design_patterns/anti_patterns.html"><strong aria-hidden="true">5.10.</strong> Anti-Patterns</a></li></ol></li><li class="chapter-item expanded "><a href="../interview_prep/interview_prep.html"><strong aria-hidden="true">6.</strong> Interview Prep</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../interview_prep/personal_anecdotal_questions.html"><strong aria-hidden="true">6.1.</strong> Personal/Anecdotal Questions</a></li><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/occupational_questions.html"><strong aria-hidden="true">6.2.</strong> Occupational Questions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/short_answer.html"><strong aria-hidden="true">6.2.1.</strong> Short Answer</a></li><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/whiteboard.html"><strong aria-hidden="true">6.2.2.</strong> Whiteboard</a></li></ol></li><li class="chapter-item expanded "><a href="../interview_prep/questions_to_ask.html"><strong aria-hidden="true">6.3.</strong> Questions To Ask</a></li></ol></li><li class="chapter-item expanded "><a href="../other_resources.html">Other Resources</a></li></ol>
-            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="../general_knowledge/general_knowledge.html"><strong aria-hidden="true">1.</strong> General Knowledge</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../general_knowledge/asymptotic_analysis.html"><strong aria-hidden="true">1.1.</strong> Asymptotic Analysis</a></li><li class="chapter-item expanded "><a href="../general_knowledge/security_cryptography.html"><strong aria-hidden="true">1.2.</strong> Security and Cryptography</a></li></ol></li><li class="chapter-item expanded "><a href="../data_structures/data_structures.html"><strong aria-hidden="true">2.</strong> Data Structures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_structures/data_types/data_types.html"><strong aria-hidden="true">2.1.</strong> Data Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_structures/data_types/primitive_types.html"><strong aria-hidden="true">2.1.1.</strong> Primitive Types</a></li><li class="chapter-item expanded "><a href="../data_structures/data_types/composite_types.html"><strong aria-hidden="true">2.1.2.</strong> Composite Types</a></li><li class="chapter-item expanded "><a href="../data_structures/data_types/abstract_data_types.html"><strong aria-hidden="true">2.1.3.</strong> Abstract Data Types</a></li></ol></li><li class="chapter-item expanded "><a href="../data_structures/linear_data_structures.html"><strong aria-hidden="true">2.2.</strong> Linear Data Structures</a></li><li class="chapter-item expanded "><a href="../data_structures/graphs.html"><strong aria-hidden="true">2.3.</strong> Graphs</a></li><li class="chapter-item expanded "><a href="../data_structures/trees.html" class="active"><strong aria-hidden="true">2.4.</strong> Trees</a></li></ol></li><li class="chapter-item expanded "><a href="../algorithms/algorithms.html"><strong aria-hidden="true">3.</strong> Algorithms</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../algorithms/top_level.html"><strong aria-hidden="true">3.1.</strong> Top-Level</a></li><li class="chapter-item expanded "><a href="../algorithms/combinatorics.html"><strong aria-hidden="true">3.2.</strong> Combinatorics</a></li><li class="chapter-item expanded "><a href="../algorithms/graph_tree.html"><strong aria-hidden="true">3.3.</strong> Graph &amp; Tree</a></li><li class="chapter-item expanded "><a href="../algorithms/sequence.html"><strong aria-hidden="true">3.4.</strong> Sequence</a></li><li class="chapter-item expanded "><a href="../algorithms/sorting.html"><strong aria-hidden="true">3.5.</strong> Sorting</a></li><li class="chapter-item expanded "><a href="../algorithms/other.html"><strong aria-hidden="true">3.6.</strong> Other</a></li></ol></li><li class="chapter-item expanded "><a href="../data_stores/data_stores.html"><strong aria-hidden="true">4.</strong> Data Stores</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../data_stores/relational_databases.html"><strong aria-hidden="true">4.1.</strong> Relational Databases</a></li><li class="chapter-item expanded "><a href="../data_stores/nosql.html"><strong aria-hidden="true">4.2.</strong> NoSQL</a></li></ol></li><li class="chapter-item expanded "><a href="../design_patterns/design_patterns.html"><strong aria-hidden="true">5.</strong> Design Patterns</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../design_patterns/creational.html"><strong aria-hidden="true">5.1.</strong> Creational</a></li><li class="chapter-item expanded "><a href="../design_patterns/structural.html"><strong aria-hidden="true">5.2.</strong> Structural</a></li><li class="chapter-item expanded "><a href="../design_patterns/behavioral.html"><strong aria-hidden="true">5.3.</strong> Behavioral</a></li><li class="chapter-item expanded "><a href="../design_patterns/functional.html"><strong aria-hidden="true">5.4.</strong> Functional</a></li><li class="chapter-item expanded "><a href="../design_patterns/concurrency.html"><strong aria-hidden="true">5.5.</strong> Concurrency</a></li><li class="chapter-item expanded "><a href="../design_patterns/architectural.html"><strong aria-hidden="true">5.6.</strong> Architectural</a></li><li class="chapter-item expanded "><a href="../design_patterns/cloud_distributed.html"><strong aria-hidden="true">5.7.</strong> Cloud Distributed</a></li><li class="chapter-item expanded "><a href="../design_patterns/testing.html"><strong aria-hidden="true">5.8.</strong> Testing</a></li><li class="chapter-item expanded "><a href="../design_patterns/other.html"><strong aria-hidden="true">5.9.</strong> Other</a></li><li class="chapter-item expanded "><a href="../design_patterns/anti_patterns.html"><strong aria-hidden="true">5.10.</strong> Anti-Patterns</a></li></ol></li><li class="chapter-item expanded "><a href="../interview_prep/interview_prep.html"><strong aria-hidden="true">6.</strong> Interview Prep</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../interview_prep/personal_anecdotal_questions.html"><strong aria-hidden="true">6.1.</strong> Personal/Anecdotal Questions</a></li><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/occupational_questions.html"><strong aria-hidden="true">6.2.</strong> Occupational Questions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/short_answer.html"><strong aria-hidden="true">6.2.1.</strong> Short Answer</a></li><li class="chapter-item expanded "><a href="../interview_prep/occupational_questions/whiteboard.html"><strong aria-hidden="true">6.2.2.</strong> Whiteboard</a></li></ol></li><li class="chapter-item expanded "><a href="../interview_prep/questions_to_ask.html"><strong aria-hidden="true">6.3.</strong> Questions To Ask</a></li></ol></li><li class="chapter-item expanded "><a href="../other_resources.html">Other Resources</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -109,27 +108,24 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
-                    </div>
+                                            </div>
 
                     <h1 class="menu-title">Software Engineering Study Guide</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
+                                                                        
                     </div>
                 </div>
 
-                
-                <div id="search-wrapper" class="hidden">
+                                <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -138,7 +134,6 @@
                     </div>
                 </div>
                 
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -150,7 +145,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#trees" id="trees">Trees</a></h1>
+                        <h1 id="trees"><a class="header" href="#trees">Trees</a></h1>
 <p>Trees are basically rooted graphs (interactions with trees begins at the same vertex each time, which is the root).</p>
 <p>Some terminology:</p>
 <ul>
@@ -162,7 +157,7 @@
 </ul>
 <p>All trees listed below use \( O(n) \) space.</p>
 <p>Trees can have very complex implementations, so the implementations will not all be described here. The important part is knowing which trees are important for which tasks; You can always google the implementation once you know what you need.</p>
-<h3><a class="header" href="#binary-tree" id="binary-tree">Binary Tree</a></h3>
+<h3 id="binary-tree"><a class="header" href="#binary-tree">Binary Tree</a></h3>
 <p>In a binary tree, no node can have more than two child nodes. This leads to some handy properties:</p>
 <ul>
 <li>The maximum number of nodes at level \( l \) will be \( 2^{l-1} \). Note: The root node is considered to be on level 1.</li>
@@ -176,7 +171,7 @@
 <li>A <strong>complete</strong> binary tree is one in which every level except the last must be completely filled, and all nodes on the last level must be as far left as possible.</li>
 <li>A <strong>perfect</strong> binary tree is one in which all leaves are on the same level.</li>
 </ul>
-<h3><a class="header" href="#binary-search-tree" id="binary-search-tree">Binary Search Tree</a></h3>
+<h3 id="binary-search-tree"><a class="header" href="#binary-search-tree">Binary Search Tree</a></h3>
 <p>The basic process of inserting into a binary search tree is as follows:</p>
 <pre><code>insert(value)
 {
@@ -190,40 +185,40 @@
 </code></pre>
 <p>The expected height of a binary search tree is \( \sqrt n \).</p>
 <p>Searching, inserting, and deleting all take, on average, \( O(\log n) \) time and, at worst, \( O(n) \) time.</p>
-<h3><a class="header" href="#avl-tree" id="avl-tree">AVL Tree</a></h3>
+<h3 id="avl-tree"><a class="header" href="#avl-tree">AVL Tree</a></h3>
 <p>In an AVL tree, the nodes are ordered, from left to right, minimum to maximum, and the tree stays as balanced as possible.</p>
 <p>The basic process of inserting is similar to that of a binary search tree, except that after an insertion, the ancestors of the new node are checked for balance and, if they are not balanced, they get re-balanced.</p>
 <p>AVL trees are similar to red-black trees in terms of operational performance, but AVL trees are faster for lookup-intensive applications because they are more strictly balanced.</p>
 <p>Searching, inserting, and deleting all take \( O(\log n) \) time.</p>
-<h3><a class="header" href="#splay-tree" id="splay-tree">Splay Tree</a></h3>
+<h3 id="splay-tree"><a class="header" href="#splay-tree">Splay Tree</a></h3>
 <p>Splay trees can really use whatever ordering they want, but the important part is that there is an order, because splay trees have the unique behavior of &quot;splaying&quot; once a node is accessed. Splaying enacts a series of rotations/swaps with the accessed node and its parent or siblings, repeatedly, until the accessed node becomes the root node and the tree still adheres to its ordering principle. This means that splay trees are very performant when it is known that some nodes will be need to be accessed much more frequently than others.</p>
 <p>Searching, inserting, and deleting all take, on average, \( O(\log n) \) time and, at worst, \( O(n) \) time.</p>
-<h3><a class="header" href="#trie" id="trie">Trie</a></h3>
+<h3 id="trie"><a class="header" href="#trie">Trie</a></h3>
 <p>What makes a tree a trie is if all nodes have a key that is some character to accompany its value. Thus, a traversal through a trie results in a path that creates a unique word/string out of the keys. This also makes it an associative array implementation.</p>
 <p>Searching, inserting, and deleting all take \( O(m) \) time, where \( m \) is the length of the word/string being accessed or updated.</p>
-<h3><a class="header" href="#cartesian-tree" id="cartesian-tree">Cartesian Tree</a></h3>
+<h3 id="cartesian-tree"><a class="header" href="#cartesian-tree">Cartesian Tree</a></h3>
 <p>Cartesian trees are heap-ordered (largest values on top, smallest at bottom, or vice-versa) trees generated from a sequence of numbers (each node represents one of the numbers in the sequence) with the unique property that a symmetric (in-order/left-to-right) traversal of the tree will yield the sequence it was generated from. It takes linear time to construct such a tree.</p>
 <p>These trees are commonly used for range-searching operations and range minimum queries.</p>
 <p>Searching, inserting, and deleting all take, on average, \( O(\log n) \) time and, at worst, \( O(n) \) time.</p>
-<h3><a class="header" href="#k-d-tree" id="k-d-tree">K-D Tree</a></h3>
+<h3 id="k-d-tree"><a class="header" href="#k-d-tree">K-D Tree</a></h3>
 <p>Every leaf node in a k-d tree represents a k-dimensional point. Each level down the tree splits that point on another dimension. </p>
 <p>For example, in a 2-d tree, the root node may represent a 1-dimensional line with the formula \( y = x \). In this tree, every leaf node to the left of the root will represent a point \( (x,y) \) where \( y \lt x \), and every leaf node to the right of it will represent a point where \( y \gt x \). You could keep creating divisions at each level until eventually you make leaf nodes with the actual coordinates of the points.</p>
 <p>This type of tree lends itself to range-searching operations and nearest neighbor problems.</p>
 <p>Searching, inserting, and deleting all take, on average, \( O(\log n) \) time and, at worst, \( O(n) \) time.</p>
-<h3><a class="header" href="#red-black-tree" id="red-black-tree">Red-Black Tree</a></h3>
+<h3 id="red-black-tree"><a class="header" href="#red-black-tree">Red-Black Tree</a></h3>
 <p>In a red-black tree, each node is assigned a color (red or black), and the tree is given a pattern. If that pattern gets broken by an insertion or deletion, then the tree is re-arranged to reform the pattern of colors. Usually the rule is that colors must alternate.</p>
 <p>Searching, inserting, and deleting all take \( O(\log n) \) time.</p>
-<h3><a class="header" href="#b-tree" id="b-tree">B-Tree</a></h3>
+<h3 id="b-tree"><a class="header" href="#b-tree">B-Tree</a></h3>
 <p>A B-tree is a non-binary tree that stores nodes in groups and remains balanced. Instead of a node having children, groups of nodes have shared children. This is used for databases and file systems since it is well-suited for storage systems that read and write relatively large blocks of data.</p>
 <p>Searching, inserting, and deleting all take \( O(\log n) \) time.</p>
-<h3><a class="header" href="#van-emde-boas-tree" id="van-emde-boas-tree">Van Emde Boas Tree</a></h3>
+<h3 id="van-emde-boas-tree"><a class="header" href="#van-emde-boas-tree">Van Emde Boas Tree</a></h3>
 <p>A unique tree that implements an associative array, whose search time improves as the stored values decrease in bit size.</p>
 <p>Searching, inserting, and deleting all take \( O(\log m) \) time, \( m \) is the bit length of the keys, and the maximum number of elements that can be stored in the tree is \( 2^m \).</p>
-<h3><a class="header" href="#radix-tree" id="radix-tree">Radix Tree</a></h3>
+<h3 id="radix-tree"><a class="header" href="#radix-tree">Radix Tree</a></h3>
 <p>A radix tree is a type of trie which is space-optimized. Each node that is an only child is merged with its parent, so instead of a path like g-l-a-d-i-a-t-o-r, you may get a path like g-l-adi-a-to-r.</p>
 <p>These share the performance of tries, with some optimizations on searching and some taxes on inserting/deleting.</p>
 <p>Searching, inserting, and deleting all take \( O(m) \) time, where \( m \) is the length of the word/string being accessed or updated.</p>
-<h3><a class="header" href="#heap" id="heap">Heap</a></h3>
+<h3 id="heap"><a class="header" href="#heap">Heap</a></h3>
 <p>Heaps are types of trees that are commonly used to implement priority queues. Heaps are almost <em>complete</em> trees, and usually they either sort by low-to-high or high-to-low from top-to-bottom.</p>
 <p>Some common operations include:</p>
 <ul>
@@ -234,10 +229,10 @@
 <li>Meld/Merge (join 2 heaps together)</li>
 <li>Heapify (turn a list of elements into a heap)</li>
 </ul>
-<h3><a class="header" href="#binary-heap" id="binary-heap">Binary Heap</a></h3>
+<h3 id="binary-heap"><a class="header" href="#binary-heap">Binary Heap</a></h3>
 <p>These are simply heaps wherein nodes can only have 2 children.</p>
 <p>Finding takes \( \Theta(1) \) time, deleting \( \Theta(\log n) \), inserting and modifying the key \( O(\log n) \), and melding/merging \( \Theta(n) \).</p>
-<h3><a class="header" href="#fibonacci-heap" id="fibonacci-heap">Fibonacci Heap</a></h3>
+<h3 id="fibonacci-heap"><a class="header" href="#fibonacci-heap">Fibonacci Heap</a></h3>
 <p>A fibonacci heap is actually a collection of heap-ordered trees, which maintains its status as a heap by keeping track of the minimum value between all the trees. The sizes of the trees are limited by the fibonacci numbers, hence the name. A fibonacci heap is guaranteed to be more performant than a binary heap in cases where insertions and modifications are more likely to happen than deletions.</p>
 <p>Finding, inserting, modifying, and merging should all take \( \Theta(1) \) time, with deletions taking \( O(\log n) \).</p>
 
@@ -245,67 +240,49 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
-                            <a rel="prev" href="../data_structures/graphs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="../data_structures/graphs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-
-                        
-                            <a rel="next" href="../algorithms/algorithms.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="../algorithms/algorithms.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
-                    <a rel="prev" href="../data_structures/graphs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="../data_structures/graphs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-
-                
-                    <a rel="next" href="../algorithms/algorithms.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="../algorithms/algorithms.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
-            </nav>
+                            </nav>
 
         </div>
 
         
-
-        
-
         
         
-        
-        <script type="text/javascript">
-            window.playpen_copyable = true;
+                <script type="text/javascript">
+            window.playground_copyable = true;
         </script>
         
-
         
-
-        
-        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
-
         <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
-
         
-
     </body>
 </html>
